@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem = $_POST['mensagem'];
 
     // Configuração do email
-    $to = "seu-email@dominio.com"; // Altere para o seu e-mail
+    $to = "paintinger1@hotmail.com"; // Altere para o seu e-mail
     $subject = "Mensagem de Contato - PaintinWeb";
     $body = "Nome: $nome\nEmail: $email\nMensagem:\n$mensagem";
     $headers = "From: $email";
