@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,13 +30,12 @@
 
 <body class="index-page">
 
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename">PaintinWeb</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
@@ -47,7 +46,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -55,11 +53,11 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg-2.jpg" alt="" class="hero-bg">
+      <img src="assets/img/hero-bg-2.jpg" alt="Fundo com tema digital" class="hero-bg">
       <div class="container">
         <div class="row gy-4 justify-content-between">
           <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Ilustração de desenvolvimento web">
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
             <h1>Crie Soluções Digitais com <span>PaintinWeb</span></h1>
@@ -71,21 +69,16 @@
           </div>
         </div>
       </div>
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <!-- SVG Ondas -->
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
         </defs>
-        <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3"></use>
-        </g>
-        <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0"></use>
-        </g>
-        <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9"></use>
-        </g>
+        <g class="wave1"><use xlink:href="#wave-path" x="50" y="3"></use></g>
+        <g class="wave2"><use xlink:href="#wave-path" x="50" y="0"></use></g>
+        <g class="wave3"><use xlink:href="#wave-path" x="50" y="9"></use></g>
       </svg>
-    </section><!-- /Hero Section -->
+    </section>
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -94,7 +87,7 @@
           <div class="col-xl-5 content">
             <h3>Sobre a PaintinWeb</h3>
             <h2>Desenvolvimento Web Sob Medida</h2>
-            <p>Na PaintinWeb, criamos sistemas e sites personalizados para empresas, utilizando tecnologias como PHP, HTML e JavaScript. Nosso foco é entregar soluções digitais eficientes, modernas e que atendam às necessidades específicas de cada cliente.</p>
+            <p>Na PaintinWeb, criamos sistemas e sites personalizados para empresas, utilizando tecnologias como PHP, HTML e JavaScript.</p>
             <a href="#contact" class="read-more"><span>Entre em Contato</span><i class="bi bi-arrow-right"></i></a>
           </div>
           <div class="col-xl-7">
@@ -103,35 +96,35 @@
                 <div class="icon-box">
                   <i class="bi bi-code-slash"></i>
                   <h3>Desenvolvimento PHP</h3>
-                  <p>Sistemas robustos e escaláveis utilizando PHP para atender às demandas do seu negócio.</p>
+                  <p>Sistemas robustos e escaláveis utilizando PHP.</p>
                 </div>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-globe"></i>
                   <h3>Sites Responsivos</h3>
-                  <p>Sites modernos e adaptáveis para todos os dispositivos, com design atrativo e funcional.</p>
+                  <p>Design moderno adaptável a todos os dispositivos.</p>
                 </div>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
                   <i class="bi bi-javascript"></i>
-                  <h3>Interatividade com JavaScript</h3>
-                  <p>Funcionalidades dinâmicas e interativas para tornar a experiência do usuário única.</p>
+                  <h3>Interatividade</h3>
+                  <p>Interfaces dinâmicas com JavaScript.</p>
                 </div>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                   <i class="bi bi-gear"></i>
-                  <h3>Manutenção e Suporte</h3>
-                  <p>Suporte contínuo e atualizações para garantir que seus sistemas estejam sempre funcionando.</p>
+                  <h3>Suporte Técnico</h3>
+                  <p>Manutenção contínua para seu sistema funcionar sempre.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /About Section -->
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="features section">
@@ -144,30 +137,30 @@
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="features-item">
               <i class="bi bi-code" style="color: #ffbb2c;"></i>
-              <h3><a href="" class="stretched-link">Sistemas em PHP</a></h3>
+              <h3><a href="#contact" class="stretched-link">Sistemas em PHP</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="features-item">
               <i class="bi bi-bootstrap" style="color: #5578ff;"></i>
-              <h3><a href="" class="stretched-link">Sites com Bootstrap</a></h3>
+              <h3><a href="#contact" class="stretched-link">Sites com Bootstrap</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
               <i class="bi bi-phone" style="color: #e80368;"></i>
-              <h3><a href="" class="stretched-link">Design Responsivo</a></h3>
+              <h3><a href="#contact" class="stretched-link">Design Responsivo</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="features-item">
               <i class="bi bi-database" style="color: #e361ff;"></i>
-              <h3><a href="" class="stretched-link">Integração com Bancos de Dados</a></h3>
+              <h3><a href="#contact" class="stretched-link">Bancos de Dados</a></h3>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Services Section -->
+    </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="gallery section">
@@ -180,34 +173,14 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/portfolio/project-1.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/portfolio/project-1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/portfolio/project-1.jpg" alt="Projeto 1" class="img-fluid">
               </a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/portfolio/project-2.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/portfolio/project-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/portfolio/project-3.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/portfolio/project-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/portfolio/project-4.jpg" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/portfolio/project-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
+          <!-- Repita para outros projetos... -->
         </div>
       </div>
-    </section><!-- /Portfolio Section -->
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -222,39 +195,32 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Endereço</h3>
-                <p>[Seu Endereço Aqui]</p>
+                <p>Passo Fundo, RS</p>
               </div>
             </div>
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Telefone</h3>
-                <p>[Seu Telefone Aqui]</p>
+                <h3>Telefone / WhatsApp</h3>
+                <p>(54) 98124-4964</p>
               </div>
             </div>
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h3>E-mail</h3>
-                <p>[Seu E-mail Aqui]</p>
+                <p>paintinger1@hotmail.com</p>
               </div>
             </div>
           </div>
+
           <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Seu E-mail" required>
-                </div>
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required>
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required></textarea>
-                </div>
+                <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Seu Nome" required></div>
+                <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Seu E-mail" required></div>
+                <div class="col-md-12"><input type="text" name="subject" class="form-control" placeholder="Assunto" required></div>
+                <div class="col-md-12"><textarea name="message" rows="6" class="form-control" placeholder="Mensagem" required></textarea></div>
                 <div class="col-md-12 text-center">
                   <div class="loading">Carregando</div>
                   <div class="error-message"></div>
@@ -266,27 +232,25 @@
           </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
-
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">PaintinWeb</span>
-          </a>
+          <a href="index.html" class="logo d-flex align-items-center"><span class="sitename">PaintinWeb</span></a>
           <div class="footer-contact pt-3">
-            <p>[Seu Endereço Aqui]</p>
-            <p class="mt-3"><strong>Telefone:</strong> <span>[Seu Telefone Aqui]</span></p>
-            <p><strong>E-mail:</strong> <span>[Seu E-mail Aqui]</span></p>
+            <p>Passo Fundo, RS</p>
+            <p class="mt-3"><strong>Telefone:</strong> <span>(54) 98124-4964</span></p>
+            <p><strong>E-mail:</strong> <span>paintinger1@hotmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
@@ -305,13 +269,13 @@
             <li><a href="#">Desenvolvimento PHP</a></li>
             <li><a href="#">Sites Responsivos</a></li>
             <li><a href="#">JavaScript Interativo</a></li>
-            <li><a href="#">Integração com Bancos de Dados</a></li>
-            <li><a href="#">Manutenção e Suporte</a></li>
+            <li><a href="#">Bancos de Dados</a></li>
+            <li><a href="#">Manutenção</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Newsletter</h4>
-          <p>Inscreva-se para receber novidades sobre nossos serviços e projetos!</p>
+          <p>Inscreva-se para receber novidades!</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Inscrever"></div>
             <div class="loading">Carregando</div>
@@ -321,8 +285,8 @@
         </div>
       </div>
     </div>
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">PaintinWeb</strong> <span>Todos os Direitos Reservados</span></p>
+    <div class="container text-center mt-4">
+      <p>© Copyright <strong class="px-1 sitename">PaintinWeb</strong> - Todos os Direitos Reservados</p>
       <div class="credits">
         Desenvolvido por <a href="https://bootstrapmade.com/">BootstrapMade</a> | Distribuído por <a href="https://themewagon.com">ThemeWagon</a>
       </div>
@@ -345,6 +309,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
+
 </html>
