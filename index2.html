@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PaintinWeb - Soluções digitais sob medida: sites profissionais e sistemas personalizados.">
+  <meta name="author" content="Joel Paintinger" />
+  <meta name="keywords" content="desenvolvimento web, sites, sistemas, PHP, HTML, suporte técnico">
+  <title>PaintinWeb - Desenvolvimento Web Profissional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+    }
+    header p {
+      font-size: 1rem;
+      color: #94a3b8;
+    }
+    nav {
+      background: #0f172a;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #38bdf8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #facc15;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #f8fafc;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+      max-width: 700px;
+      margin: auto;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+    section p {
+      margin-bottom: 10px;
+      color: #e2e8f0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #0ea5e9;
+    }
+    footer {
+      background: #1e293b;
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea {
+      padding: 10px;
+      border-radius: 4px;
+      border: none;
+      background: #334155;
+      color: #f1f5f9;
+      font-size: 1rem;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #94a3b8;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 10px 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PaintinWeb</h1>
+    <p>Desenvolvimento de Sites e Sistemas Web Sob Medida</p>
+  </header>
+
+  <nav>
+    <a href="#servicos">Serviços</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Transformamos suas ideias em soluções digitais</h2>
+    <p>Criação de sites profissionais, sistemas personalizados, landing pages e mais, com foco em desempenho e tecnologia.</p>
+  </div>
+
+  <section id="servicos">
+    <h3>Serviços</h3>
+    <p>✅ Sites institucionais e landing pages responsivas</p>
+    <p>✅ Sistemas web sob medida com PHP, HTML, JavaScript</p>
+    <p>✅ Integrações com APIs, bancos de dados e painéis administrativos</p>
+    <p>✅ Suporte técnico remoto e manutenção</p>
+  </section>
+
+  <section id="portfolio">
+    <h3>Portfólio</h3>
+    <p>💼 <strong>Ville de la Vie</strong> – Plataforma para residenciais de idosos</p>
+    <p>💼 <strong>PaintinSenior</strong> – Sistema de gestão e prescrição clínica</p>
+    <p>💼 <strong>Tech Rápido</strong> – Suporte técnico online sob demanda</p>
+  </section>
+
+  <section id="contato">
+    <h3>Contato</h3>
+    <form action="https://formsubmit.co/joelpaintinger@gmail.com" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      <button type="submit" class="btn">Enviar mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 PaintinWeb. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
