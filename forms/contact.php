@@ -1,24 +1,33 @@
 <?php
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'paintinger1@hotmail.com';
+// Defina o e-mail que irá receber os contatos
+$to = "paintinger1@hotmail.com";
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Não é possível carregar a biblioteca "PHP Email Form"!');
-  }
+// Verifique se o formulário foi enviado via POST
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Coleta e sanitiza os dados do formulário
+    $name    = htmlspecialchars(strip_tags(trim($_POST["name"])));
+    $email   = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $subject = htmlspecialchars(strip_tags(trim($_POST["subject"])));
+    $message = htmlspecialchars(strip_tags(trim($_POST["message"])));
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    // Cabeçalhos do e-mail
+    $headers  = "From: $name <$email>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+    // Corpo da mensagem
+    $body  = "Nome: $name\n";
+    $body .= "Email: $email\n";
+    $body .= "Assunto: $subject\n\n";
+    $body .= "Mensagem:\n$message\n";
 
-  echo $contact->send();
+    // Envia o e-mail
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Sua mensagem foi enviada com sucesso!";
+    } else {
+        echo "Erro ao enviar a mensagem. Tente novamente.";
+    }
+} else {
+    echo "Método inválido.";
+}
 ?>
