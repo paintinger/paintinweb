@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>PaintinWeb - Desenvolvimento de Sistemas e Sites</title>
-  <meta name="description" content="PaintinWeb oferece serviços de desenvolvimento de sistemas em PHP, HTML e JavaScript, criando sites profissionais e responsivos para empresas.">
-  <meta name="keywords" content="PaintinWeb, desenvolvimento web, PHP, HTML, JavaScript, sites para empresas, sistemas web">
+  <title>PaintinWeb - Desenvolvimento de Sistemas e Sites Profissionais</title>
+  <meta name="description" content="PaintinWeb oferece serviços especializados em desenvolvimento de sistemas e sites em PHP, HTML e JavaScript, criando soluções digitais modernas e responsivas para empresas.">
+  <meta name="keywords" content="PaintinWeb, desenvolvimento web, PHP, HTML, JavaScript, sites profissionais, sistemas web, design responsivo">
+  <meta name="author" content="PaintinWeb">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -15,7 +16,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,10 +39,10 @@
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#hero" class="active">Início</a></li>
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#features">Serviços</a></li>
+          <li><a href="#gallery">Portfólio</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -57,7 +58,7 @@
       <div class="container">
         <div class="row gy-4 justify-content-between">
           <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Ilustração de desenvolvimento web">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Ilustração de desenvolvimento web" aria-label="Ilustração de desenvolvimento web">
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
             <h1>Crie Soluções Digitais com <span>PaintinWeb</span></h1>
@@ -69,16 +70,21 @@
           </div>
         </div>
       </div>
-      <!-- SVG Ondas -->
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
         </defs>
-        <g class="wave1"><use xlink:href="#wave-path" x="50" y="3"></use></g>
-        <g class="wave2"><use xlink:href="#wave-path" x="50" y="0"></use></g>
-        <g class="wave3"><use xlink:href="#wave-path" x="50" y="9"></use></g>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
       </svg>
-    </section>
+    </section><!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -124,10 +130,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- /About Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="features section">
+    <!-- Features Section -->
+    <section id="features" class="features section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Serviços</h2>
         <div><span>Conheça Nossos</span> <span class="description-title">Serviços</span></div>
@@ -148,7 +154,7 @@
           </div>
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
-              <i class="bi bi-phone" style="color: #e80368;"></i>
+              <i class="bi bi-phonecury-circle" style="color: #e80368;"></i>
               <h3><a href="#contact" class="stretched-link">Design Responsivo</a></h3>
             </div>
           </div>
@@ -160,63 +166,429 @@
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- /Features Section -->
 
-    <!-- Portfolio Section -->
-<section id="portfolio" class="gallery section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Portfólio</h2>
-    <div><span>Veja Nosso</span> <span class="description-title">Trabalho</span></div>
-  </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-0">
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/portfolio/project-1.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/portfolio/project-1.jpg" alt="Sistema de Gestão Empresarial" class="img-fluid">
-          </a>
-          <div class="gallery-info">
-            <h4>Sistema de Gestão Empresarial</h4>
-            <p>Um sistema em PHP para gestão de estoque e vendas, com interface responsiva.</p>
+    <!-- Stats Section -->
+    <section id="stats" class="stats section light-background">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-emoji-smile"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clientes Satisfeitos</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-journal-richtext"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projetos Concluídos</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-headset"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Horas de Suporte</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
+            <i class="bi bi-people"></i>
+            <div class="stats-item">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Colaboradores</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/portfolio/project-2.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/portfolio/project-2.jpg" alt="Site Institucional" class="img-fluid">
-          </a>
-          <div class="gallery-info">
-            <h4>Site Institucional</h4>
-            <p>Site moderno e responsivo para clínica médica, desenvolvido com Bootstrap.</p>
+    </section><!-- /Stats Section -->
+
+    <!-- Details Section -->
+    <section id="details" class="details section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Detalhes</h2>
+        <div><span>Conheça Nossos</span> <span class="description-title">Detalhes</span></div>
+      </div>
+      <div class="container">
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <img src="assets/img/details-1.png" class="img-fluid" alt="Soluções em PHP">
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Soluções Personalizadas em PHP</h3>
+            <p class="fst-italic">
+              Desenvolvemos sistemas robustos e escaláveis utilizando PHP, adaptados às necessidades específicas de cada cliente.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Sistemas de gestão empresarial.</span></li>
+              <li><i class="bi bi-check"></i><span> Integrações com APIs e bancos de dados.</span></li>
+              <li><i class="bi bi-check"></i><span> Soluções seguras e otimizadas.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/details-2.png" class="img-fluid" alt="Sites com Bootstrap">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Sites Responsivos com Bootstrap</h3>
+            <p class="fst-italic">
+              Criamos sites modernos e adaptáveis a todos os dispositivos, utilizando o framework Bootstrap para garantir design e funcionalidade.
+            </p>
+            <p>
+              Nossos sites são otimizados para SEO, rápidos e fáceis de navegar, proporcionando uma experiência de usuário excepcional.
+            </p>
+          </div>
+        </div>
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/details-3.png" class="img-fluid" alt="Interatividade com JavaScript">
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>Interatividade com JavaScript</h3>
+            <p>Desenvolvemos interfaces dinâmicas e interativas utilizando JavaScript, garantindo funcionalidades avançadas e experiências envolventes.</p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Carrinhos de compras dinâmicos.</span></li>
+              <li><i class="bi bi-check"></i><span> Dashboards analíticos em tempo real.</span></li>
+              <li><i class="bi bi-check"></i><span> Efeitos visuais e animações.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <img src="assets/img/details-4.png" class="img-fluid" alt="Suporte e Manutenção">
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Suporte e Manutenção Contínua</h3>
+            <p class="fst-italic">
+              Oferecemos suporte técnico contínuo para garantir que seus sistemas e sites funcionem perfeitamente.
+            </p>
+            <p>
+              Realizamos atualizações, correções de bugs e otimizações para manter sua solução digital sempre atualizada e segura.
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/portfolio/project-3.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/portfolio/project-3.jpg" alt="E-commerce" class="img-fluid">
-          </a>
-          <div class="gallery-info">
-            <h4>E-commerce</h4>
-            <p>Loja virtual interativa com carrinho de compras dinâmico em JavaScript.</p>
+    </section><!-- /Details Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfólio</h2>
+        <div><span>Veja Nosso</span> <span class="description-title">Trabalho</span></div>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/portfolio/project-1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/portfolio/project-1.jpg" alt="Sistema de Gestão Empresarial" class="img-fluid">
+              </a>
+              <div class="gallery-info p-3">
+                <h4>Sistema de Gestão Empresarial</h4>
+                <p>Sistema em PHP para gestão de estoque e vendas, com interface responsiva.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/portfolio/project-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/portfolio/project-2.jpg" alt="Site Institucional" class="img-fluid">
+              </a>
+              <div class="gallery-info p-3">
+                <h4>Site Institucional</h4>
+                <p>Site moderno e responsivo para clínica médica, desenvolvido com Bootstrap.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/portfolio/project-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/portfolio/project-3.jpg" alt="E-commerce" class="img-fluid">
+              </a>
+              <div class="gallery-info p-3">
+                <h4>E-commerce</h4>
+                <p>Loja virtual interativa com carrinho de compras dinâmico em JavaScript.</p>
+              </div>
+            </div>
+64
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/portfolio/project-4.jpg" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/portfolio/project-4.jpg" alt="Dashboard Analítico" class="img-fluid">
-          </a>
-          <div class="gallery-info">
-            <h4>Dashboard Analítico</h4>
-            <p>Painel de controle com visualização de dados em tempo real, integrado a banco de dados.</p>
+    </section><!-- /Gallery Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="Fundo de depoimentos">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Ana Paula">
+                <h3>Ana Paula</h3>
+                <h4>Empresária</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A PaintinWeb transformou nosso negócio com um site incrível! Rápido, moderno e super fácil de usar, aumentou nossas vendas em 30% em apenas dois meses!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Carlos Mendes">
+                <h3>Carlos Mendes</h3>
+                <h4>Gestor de TI</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>O sistema PHP que desenvolveram para nós é fantástico! Seguro, rápido e personalizado. O suporte deles é fora da curva, sempre prontos para ajudar!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Mariana Costa">
+                <h3>Mariana Costa</h3>
+                <h4>Empreendedora</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Minha loja virtual ficou perfeita com a PaintinWeb! O design responsivo e o carrinho dinâmico conquistaram meus clientes. Recomendo demais!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="Rafael Souza">
+                <h3>Rafael Souza</h3>
+                <h4>Proprietário de Startup</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>A PaintinWeb entregou um dashboard analítico que revolucionou nossa gestão. Visual, intuitivo e em tempo real. Foi um divisor de águas!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="Juliana Lima">
+                <h3>Juliana Lima</h3>
+                <h4>Gerente de Marketing</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Trabalhar com a PaintinWeb foi a melhor decisão! Nosso site é lindo, funcional e otimizado para SEO. Nossos clientes adoram a experiência!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Equipe</h2>
+        <div><span>Conheça Nossa</span> <span class="description-title">Equipe</span></div>
+      </div>
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt="Líder da equipe"></div>
+              <div class="member-info">
+                <h4>Lucas Almeida</h4>
+                <span>Diretor Executivo</span>
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt="Gerente de projetos"></div>
+              <div class="member-info">
+                <h4>Marina Oliveira</h4>
+                <span>Gerente de Projetos</span>
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt="Líder técnico"></div>
+              <div class="member-info">
+                <h4>Rodrigo Santos</h4>
+                <span>Líder Técnico</span>
+                <div class="social">
+                  <a href="#"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-facebook"></i></a>
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Preços</h2>
+        <div><span>Conheça Nossos</span> <span class="description-title">Planos</span></div>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Plano Básico</h3>
+              <p class="description">Ideal para pequenos negócios que precisam de um site simples e funcional.</p>
+              <h4><sup>R$</sup>150<span> / mês</span></h4>
+              <a href="#contact" class="cta-btn">Teste Grátis</a>
+              <p class="text-center small">Sem necessidade de cartão de crédito</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Site com até 5 páginas</span></li>
+                <li><i class="bi bi-check"></i> <span>Design responsivo</span></li>
+                <li><i class="bi bi-check"></i> <span>Suporte básico</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Integrações avançadas</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Manutenção contínua</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>SEO avançado</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Sistemas personalizados</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <p class="popular">Mais Popular</p>
+              <h3>Plano Profissional</h3>
+              <p class="description">Perfeito para empresas que desejam um site robusto e funcionalidades avançadas.</p>
+              <h4><sup>R$</sup>299<span> / mês</span></h4>
+              <a href="#contact" class="cta-btn">Teste Grátis</a>
+              <p class="text-center small">Sem necessidade de cartão de crédito</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Site com até 15 páginas</span></li>
+                <li><i class="bi bi-check"></i> <span>Design responsivo</span></li>
+                <li><i class="bi bi-check"></i> <span>Suporte prioritário</span></li>
+                <li><i class="bi bi-check"></i> <span>Integrações com APIs</span></li>
+                <li><i class="bi bi-check"></i> <span>Manutenção mensal</span></li>
+                <li><i class="bi bi-check"></i> <span>SEO básico</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Sistemas personalizados</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Plano Empresarial</h3>
+              <p class="description">Soluções completas para negócios que precisam de sistemas e sites avançados.</p>
+              <h4><sup>R$</sup>499<span> / mês</span></h4>
+              <a href="#contact" class="cta-btn">Teste Grátis</a>
+              <p class="text-center small">Sem necessidade de cartão de crédito</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Site ilimitado</span></li>
+                <li><i class="bi bi-check"></i> <span>Design responsivo</span></li>
+                <li><i class="bi bi-check"></i> <span>Suporte 24/7</span></li>
+                <li><i class="bi bi-check"></i> <span>Integrações com APIs</span></li>
+                <li><i class="bi bi-check"></i> <span>Manutenção contínua</span></li>
+                <li><i class="bi bi-check"></i> <span>SEO avançado</span></li>
+                <li><i class="bi bi-check"></i> <span>Sistemas personalizados</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section light-background">
+      <div class="container-fluid">
+        <div class="row gy-4">
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span>Perguntas</span> <strong>Frequentes</strong></h3>
+              <p>
+                Confira as dúvidas mais comuns sobre nossos serviços de desenvolvimento web.
+              </p>
+            </div>
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+              <div class="faq-item faq-active">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Quais tecnologias vocês utilizam?</h3>
+                <div class="faq-content">
+                  <p>Utilizamos principalmente PHP, HTML, JavaScript e Bootstrap para criar sistemas e sites robustos, responsivos e interativos.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Vocês oferecem suporte após a entrega do projeto?</h3>
+                <div class="faq-content">
+                  <p>Sim, oferecemos suporte técnico contínuo, incluindo manutenção, atualizações e correções de bugs para garantir o bom funcionamento do seu sistema ou site.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Quanto tempo leva para desenvolver um site?</h3>
+                <div class="faq-content">
+                  <p>O prazo depende da complexidade do projeto, mas geralmente varia de 2 a 8 semanas. Entre em contato para uma estimativa personalizada.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="assets/img/faq.jpg" class="img-fluid" alt="Imagem de perguntas frequentes" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+      </div>
+    </section><!-- /Faq Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -238,7 +610,7 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Telefone / WhatsApp</h3>
-                <p><a href="https://wa.me/5554981244964" target="_blank"(54) 98124-4964</a></p>
+                <p><a href="https://wa.me/5554981244964" target="_blank">(54) 98124-4964</a></p>
               </div>
             </div>
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
@@ -249,14 +621,21 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
-                <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Seu Nome" required></div>
-                <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Seu E-mail" required></div>
-                <div class="col-md-12"><input type="text" name="subject" class="form-control" placeholder="Assunto" required></div>
-                <div class="col-md-12"><textarea name="message" rows="6" class="form-control" placeholder="Mensagem" required></textarea></div>
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Seu Nome" required aria-required="true">
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Seu E-mail" required aria-required="true">
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required aria-required="true">
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required aria-required="true"></textarea>
+                </div>
                 <div class="col-md-12 text-center">
                   <div class="loading">Carregando</div>
                   <div class="error-message"></div>
@@ -268,19 +647,21 @@
           </div>
         </div>
       </div>
-    </section>
+    </section><!-- /Contact Section -->
+
   </main>
 
-  <!-- Footer -->
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center"><span class="sitename">PaintinWeb</span></a>
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">PaintinWeb</span>
+          </a>
           <div class="footer-contact pt-3">
             <p>Passo Fundo, RS</p>
             <p class="mt-3"><strong>Telefone:</strong> <span>(54) 98124-4964</span></p>
-            <p><strong>E-mail:</strong> <span>paintinger1@hotmail.com</span></p>
+            <p><strong>E-mail:</strong> <span><a href="mailto:paintinger1@hotmail.com">paintinger1@hotmail.com</a></span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -292,10 +673,10 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Links Úteis</h4>
           <ul>
-            <li><a href="#hero">Home</a></li>
+            <li><a href="#hero">Início</a></li>
             <li><a href="#about">Sobre</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#features">Serviços</a></li>
+            <li><a href="#gallery">Portfólio</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
@@ -313,7 +694,7 @@
           <h4>Newsletter</h4>
           <p>Inscreva-se para receber novidades!</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Inscrever"></div>
+            <div class="newsletter-form"><input type="email" name="email" placeholder="Seu E-mail" required aria-required="true"><input type="submit" value="Inscrever"></div>
             <div class="loading">Carregando</div>
             <div class="error-message"></div>
             <div class="sent-message">Sua inscrição foi enviada. Obrigado!</div>
@@ -321,10 +702,10 @@
         </div>
       </div>
     </div>
-    <div class="container text-center mt-4">
-      <p>© Copyright <strong class="px-1 sitename">PaintinWeb</strong> - Todos os Direitos Reservados</p>
+    <div class="container copyright text-center mt-4">
+      <p>© 2025 <strong class="px-1 sitename">PaintinWeb</strong> <span>Todos os Direitos Reservados</span></p>
       <div class="credits">
-        Desenvolvido por <a href="https://bootstrapmade.com/">BootstrapMade</a> | Distribuído por <a href="https://themewagon.com">ThemeWagon</a>
+        Desenvolvido por <a href="#">Joel Paintinger</a> | Distribuído por <a href="#">PaintinWeb</a>
       </div>
     </div>
   </footer>
@@ -345,6 +726,7 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
