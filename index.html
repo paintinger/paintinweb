@@ -215,20 +215,31 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formsubmit.co/paintinger1@hotmail.com" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <!-- Desativa o CAPTCHA padrão -->
+              <input type="hidden" name="_captcha" value="false">
+              <!-- Redireciona para uma página de agradecimento após envio -->
+              <input type="hidden" name="_next" value="https://paintinger.github.io/paintinweb/obrigado.html">
+              
               <div class="row gy-4">
-                <div class="col-md-6"><input type="text" name="name" class="form-control" placeholder="Seu Nome" required></div>
-                <div class="col-md-6"><input type="email" name="email" class="form-control" placeholder="Seu E-mail" required></div>
-                <div class="col-md-12"><input type="text" name="subject" class="form-control" placeholder="Assunto" required></div>
-                <div class="col-md-12"><textarea name="message" rows="6" class="form-control" placeholder="Mensagem" required></textarea></div>
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Seu Nome" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Seu E-mail" required>
+                </div>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required>
+                </div>
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required></textarea>
+                </div>
                 <div class="col-md-12 text-center">
-                  <div class="loading">Carregando</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
                   <button type="submit">Enviar Mensagem</button>
                 </div>
               </div>
             </form>
+
           </div>
         </div>
       </div>
