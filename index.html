@@ -8,6 +8,11 @@
   <meta name="description" content="PaintinWeb oferece serviços especializados em desenvolvimento de sistemas e sites em PHP, HTML e JavaScript, criando soluções digitais modernas e responsivas para empresas.">
   <meta name="keywords" content="PaintinWeb, desenvolvimento web, PHP, HTML, JavaScript, sites profissionais, sistemas web, design responsivo">
   <meta name="author" content="PaintinWeb">
+  <!-- Open Graph e Twitter Card -->
+  <meta property="og:title" content="PaintinWeb - Desenvolvimento de Sistemas e Sites Profissionais">
+  <meta property="og:description" content="Soluções digitais modernas e responsivas em PHP, HTML e JavaScript.">
+  <meta property="og:image" content="assets/img/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicons -->
   <link href="assets/img/logofa.png" rel="icon">
@@ -30,12 +35,15 @@
 </head>
 
 <body class="index-page">
+  <noscript>
+    <p>Este site requer JavaScript para funcionar corretamente. Habilite o JavaScript no seu navegador.</p>
+  </noscript>
 
   <!-- Cabeçalho -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename"><img src="assets/img/logofa.png"> PaintinWeb</h1>
+        <h1 class="sitename"><img src="assets/img/logofa.png" alt="Logo PaintinWeb" width="40" height="40"> PaintinWeb</h1>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -45,7 +53,7 @@
           <li><a href="#gallery">Portfólio</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Abrir menu de navegação"></i>
       </nav>
     </div>
   </header>
@@ -54,11 +62,17 @@
 
     <!-- Seção Hero -->
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg-2.jpg" alt="Fundo com tema digital" class="hero-bg">
+      <picture>
+        <source srcset="assets/img/hero-bg-2.webp" type="image/webp">
+        <img src="assets/img/hero-bg-2.jpg" alt="Fundo com tema digital" class="hero-bg" width="1920" height="1080">
+      </picture>
       <div class="container">
         <div class="row gy-4 justify-content-between">
           <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/logo.png" class="img-fluid animated" alt="Ilustração de desenvolvimento web" aria-label="Ilustração de desenvolvimento web">
+            <picture>
+              <source srcset="assets/img/logo.webp" type="image/webp">
+              <img src="assets/img/logo.png" class="img-fluid animated" alt="Ilustração de desenvolvimento web" width="300" height="200">
+            </picture>
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
             <h1>Transforme suas ideias em <span>soluções digitais poderosas</span> com a <strong>PaintinWeb</strong></h1>
@@ -69,107 +83,105 @@
           </div>
         </div>
       </div>
-      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
           <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
         </defs>
         <g class="wave1">
-          <use xlink:href="#wave-path" x="50" y="3"></use>
+          <use href="#wave-path" x="50" y="3"></use>
         </g>
         <g class="wave2">
-          <use xlink:href="#wave-path" x="50" y="0"></use>
+          <use href="#wave-path" x="50" y="0"></use>
         </g>
         <g class="wave3">
-          <use xlink:href="#wave-path" x="50" y="9"></use>
+          <use href="#wave-path" x="50" y="9"></use>
         </g>
       </svg>
     </section><!-- Fim da Seção Hero -->
 
     <!-- Seção Sobre -->
-<section id="about" class="about section">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row align-items-xl-center gy-5">
-      <div class="col-xl-5 content">
-        <h3>Sobre a PaintinWeb</h3>
-        <h2>Soluções Digitais Sob Medida para o Seu Negócio</h2>
-        <p>Na PaintinWeb, transformamos ideias em experiências digitais únicas. Desenvolvemos sistemas e sites personalizados com foco em desempenho, segurança e design moderno, utilizando tecnologias como PHP, HTML e JavaScript.</p>
-        <a href="#contact" class="read-more">
-          <span>Fale com a Gente</span><i class="bi bi-arrow-right"></i>
-        </a>
-      </div>
-      <div class="col-xl-7">
-        <div class="row gy-4 icon-boxes">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box">
-              <i class="bi bi-code-slash"></i>
-              <h3>Desenvolvimento em PHP</h3>
-              <p>Construímos sistemas robustos, escaláveis e sob medida para atender às demandas específicas da sua empresa.</p>
-            </div>
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-xl-center gy-5">
+          <div class="col-xl-5 content">
+            <h3>Sobre a PaintinWeb</h3>
+            <h2>Soluções Digitais Sob Medida para o Seu Negócio</h2>
+            <p>Na PaintinWeb, transformamos ideias em experiências digitais únicas. Desenvolvemos sistemas e sites personalizados com foco em desempenho, segurança e design moderno, utilizando tecnologias como PHP, HTML e JavaScript.</p>
+            <a href="#contact" class="read-more">
+              <span>Fale com a Gente</span><i class="bi bi-arrow-right"></i>
+            </a>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon-box">
-              <i class="bi bi-globe"></i>
-              <h3>Sites Responsivos</h3>
-              <p>Design elegante e funcional, com adaptação perfeita para celulares, tablets e desktops.</p>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon-box">
-              <i class="bi bi-javascript"></i>
-              <h3>Interatividade com JavaScript</h3>
-              <p>Criamos interfaces dinâmicas e envolventes para melhorar a experiência do usuário e agregar valor ao seu produto digital.</p>
-            </div>
-          </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon-box">
-              <i class="bi bi-gear"></i>
-              <h3>Suporte Técnico Especializado</h3>
-              <p>Conte com uma equipe dedicada para manter seu sistema atualizado, seguro e sempre em funcionamento.</p>
+          <div class="col-xl-7">
+            <div class="row gy-4 icon-boxes">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box">
+                  <i class="bi bi-code-slash"></i>
+                  <h3>Desenvolvimento em PHP</h3>
+                  <p>Construímos sistemas robustos, escaláveis e sob medida para atender às demandas específicas da sua empresa.</p>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-globe"></i>
+                  <h3>Sites Responsivos</h3>
+                  <p>Design elegante e funcional, com adaptação perfeita para celulares, tablets e desktops.</p>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-javascript"></i>
+                  <h3>Interatividade com JavaScript</h3>
+                  <p>Criamos interfaces dinâmicas e envolventes para melhorar a experiência do usuário e agregar valor ao seu produto digital.</p>
+                </div>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-gear"></i>
+                  <h3>Suporte Técnico Especializado</h3>
+                  <p>Conte com uma equipe dedicada para manter seu sistema atualizado, seguro e sempre em funcionamento.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- Fim da Seção Sobre -->
+    </section><!-- Fim da Seção Sobre -->
 
     <!-- Seção Serviços -->
-<section id="features" class="features section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Serviços</h2>
-    <div><span>Conheça Nossos</span> <span class="description-title">Serviços Exclusivos</span></div>
-  </div>
-  <div class="container">
-    <div class="row gy-4">
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="features-item">
-          <i class="bi bi-code-slash" style="color: #ffbb2c; font-size: 2.5rem;"></i>
-          <h3><a href="#contact" class="stretched-link">Sistemas em PHP Avançados</a></h3>
+    <section id="features" class="features section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Serviços</h2>
+        <div><span>Conheça Nossos</span> <span class="description-title">Serviços Exclusivos</span></div>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="features-item">
+              <i class="bi bi-code-slash" style="color: #ffbb2c; font-size: 2.5rem;"></i>
+              <h3><a href="#contact" class="stretched-link">Sistemas em PHP Avançados</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="features-item">
+              <i class="bi bi-brush" style="color: #28a745; font-size: 2.5rem;"></i>
+              <h3><a href="#contact" class="stretched-link">Design Personalizado</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="features-item">
+              <i class="bi bi-phone" style="color: #e80368; font-size: 2.5rem;"></i>
+              <h3><a href="#contact" class="stretched-link">Design Responsivo</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="features-item">
+              <i class="bi bi-database" style="color: #e361ff; font-size: 2.5rem;"></i>
+              <h3><a href="#contact" class="stretched-link">Bancos de Dados Otimizados</a></h3>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="features-item">
-          <i class="bi bi-brush" style="color: #28a745; font-size: 2.5rem;"></i>
-          <h3><a href="#contact" class="stretched-link">Design Personalizado</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="features-item">
-          <i class="bi bi-phone" style="color: #e80368; font-size: 2.5rem;"></i>
-          <h3><a href="#contact" class="stretched-link">Design Responsivo</a></h3>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="features-item">
-          <i class="bi bi-database" style="color: #e361ff; font-size: 2.5rem;"></i>
-          <h3><a href="#contact" class="stretched-link">Bancos de Dados Otimizados</a></h3>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Fim da Seção Serviços -->
+    </section><!-- Fim da Seção Serviços -->
 
     <!-- Seção Estatísticas -->
     <section id="stats" class="stats section light-background">
@@ -209,135 +221,145 @@
 
     <!-- Seção Detalhes -->
     <section id="details" class="details section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Detalhes</h2>
-    <div><span>Conheça Nossos</span> <span class="description-title">Diferenciais</span></div>
-  </div>
-  <div class="container">
-    <div class="row gy-4 align-items-center features-item">
-      <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-        <img src="assets/img/details-1.png" class="img-fluid" alt="Soluções em PHP">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Detalhes</h2>
+        <div><span>Conheça Nossos</span> <span class="description-title">Diferenciais</span></div>
       </div>
-      <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-        <h3>Soluções PHP Sob Medida</h3>
-        <p class="fst-italic">
-          Criamos sistemas robustos, escaláveis e totalmente personalizados para transformar desafios em oportunidades, atendendo exatamente às demandas do seu negócio.
-        </p>
-        <ul>
-          <li><i class="bi bi-check"></i><span> Sistemas inteligentes de gestão empresarial para otimizar processos.</span></li>
-          <li><i class="bi bi-check"></i><span> Integrações avançadas com APIs e bancos de dados, ampliando funcionalidades.</span></li>
-          <li><i class="bi bi-check"></i><span> Desenvolvimento focado em segurança, performance e alta eficiência.</span></li>
-        </ul>
+      <div class="container">
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+            <picture>
+              <source srcset="assets/img/details-1.webp" type="image/webp">
+              <img src="assets/img/details-1.png" class="img-fluid" alt="Soluções em PHP" width="400" height="300">
+            </picture>
+          </div>
+          <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
+            <h3>Soluções PHP Sob Medida</h3>
+            <p class="fst-italic">
+              Criamos sistemas robustos, escaláveis e totalmente personalizados para transformar desafios em oportunidades, atendendo exatamente às demandas do seu negócio.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Sistemas inteligentes de gestão empresarial para otimizar processos.</span></li>
+              <li><i class="bi bi-check"></i><span> Integrações avançadas com APIs e bancos de dados, ampliando funcionalidades.</span></li>
+              <li><i class="bi bi-check"></i><span> Desenvolvimento focado em segurança, performance e alta eficiência.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+            <picture>
+              <source srcset="assets/img/details-2.webp" type="image/webp">
+              <img src="assets/img/details-2.png" class="img-fluid" alt="Sites com Bootstrap" width="400" height="300">
+            </picture>
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
+            <h3>Sites Responsivos com Design Impecável</h3>
+            <p class="fst-italic">
+              Desenvolvemos sites modernos, intuitivos e totalmente adaptáveis a qualquer dispositivo, garantindo uma presença digital marcante.
+            </p>
+            <p>
+              Nossos projetos são otimizados para SEO, carregam rapidamente e oferecem uma navegação fluida, potencializando a experiência do usuário e seu alcance online.
+            </p>
+          </div>
+        </div>
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
+            <picture>
+              <source srcset="assets/img/details-3.webp" type="image/webp">
+              <img src="assets/img/details-3.png" class="img-fluid" alt="Interatividade com JavaScript" width="400" height="300">
+            </picture>
+          </div>
+          <div class="col-md-7" data-aos="fade-up">
+            <h3>Interatividade e Dinamismo com JavaScript e HTML5</h3>
+            <p>
+              Criamos interfaces interativas e envolventes utilizando JavaScript e HTML5, entregando experiências fluidas e funcionais para o usuário.
+            </p>
+            <ul>
+              <li><i class="bi bi-check"></i><span> Componentes dinâmicos e responsivos para melhorar a usabilidade.</span></li>
+              <li><i class="bi bi-check"></i><span> Animações suaves e efeitos visuais modernos que aumentam o engajamento.</span></li>
+              <li><i class="bi bi-check"></i><span> Utilização das melhores práticas em HTML5 para garantir performance e compatibilidade.</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row gy-4 align-items-center features-item">
+          <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
+            <picture>
+              <source srcset="assets/img/details-4.webp" type="image/webp">
+              <img src="assets/img/details-4.png" class="img-fluid" alt="Suporte e Manutenção" width="400" height="300">
+            </picture>
+          </div>
+          <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
+            <h3>Suporte Técnico e Manutenção Proativos</h3>
+            <p class="fst-italic">
+              Garantimos a máxima performance dos seus sistemas com suporte dedicado e manutenção contínua, para que você possa focar no crescimento do seu negócio.
+            </p>
+            <p>
+              Realizamos atualizações constantes, correções ágeis e otimizações estratégicas, assegurando que sua solução digital esteja sempre à frente.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row gy-4 align-items-center features-item">
-      <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-        <img src="assets/img/details-2.png" class="img-fluid" alt="Sites com Bootstrap">
-      </div>
-      <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
-        <h3>Sites Responsivos com Design Impecável</h3>
-        <p class="fst-italic">
-          Desenvolvemos sites modernos, intuitivos e totalmente adaptáveis a qualquer dispositivo, garantindo uma presença digital marcante.
-        </p>
-        <p>
-          Nossos projetos são otimizados para SEO, carregam rapidamente e oferecem uma navegação fluida, potencializando a experiência do usuário e seu alcance online.
-        </p>
-      </div>
-    </div>
-    <div class="row gy-4 align-items-center features-item">
-      <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-        <img src="assets/img/details-3.png" class="img-fluid" alt="Interatividade com JavaScript">
-      </div>
-      <div class="col-md-7" data-aos="fade-up">
-        <h3>Interatividade e Dinamismo com JavaScript e HTML5</h3>
-        <p>
-          Criamos interfaces interativas e envolventes utilizando JavaScript e HTML5, entregando experiências fluidas e funcionais para o usuário.
-        </p>
-        <ul>
-          <li><i class="bi bi-check"></i><span> Componentes dinâmicos e responsivos para melhorar a usabilidade.</span></li>
-          <li><i class="bi bi-check"></i><span> Animações suaves e efeitos visuais modernos que aumentam o engajamento.</span></li>
-          <li><i class="bi bi-check"></i><span> Utilização das melhores práticas em HTML5 para garantir performance e compatibilidade.</span></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row gy-4 align-items-center features-item">
-      <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-        <img src="assets/img/details-4.png" class="img-fluid" alt="Suporte e Manutenção">
-      </div>
-      <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-        <h3>Suporte Técnico e Manutenção Proativos</h3>
-        <p class="fst-italic">
-          Garantimos a máxima performance dos seus sistemas com suporte dedicado e manutenção contínua, para que você possa focar no crescimento do seu negócio.
-        </p>
-        <p>
-          Realizamos atualizações constantes, correções ágeis e otimizações estratégicas, assegurando que sua solução digital esteja sempre à frente.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Fim da Seção Detalhes -->
+    </section><!-- Fim da Seção Detalhes -->
 
     <!-- Seção Portfólio -->
     <section id="gallery" class="gallery section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Portfólio</h2>
-    <div><span>Confira Nosso</span> <span class="description-title">Trabalho</span></div>
-  </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-0">
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/paintinsenior.png" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/paintinsenior.png" alt="PaintinSenior - Sistema de Gestão Empresarial" class="img-fluid">
-          </a>
-          <div class="gallery-info p-3">
-            <h4>PaintinSenior</h4>
-            <p>Sistema de gestão desenvolvido em PHP, voltado para clínicas de cuidados a idosos, com foco na otimização de processos e no aprimoramento do controle interno.</p>
-            <a href="#contact" class="read-more">
-              <span>Entre em contato</span> <i class="bi bi-arrow-right"></i>
-            </a>
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfólio</h2>
+        <div><span>Confira Nosso</span> <span class="description-title">Trabalho</span></div>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/paintinsenior.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/paintinsenior.png" alt="PaintinSenior - Sistema de Gestão Empresarial" class="img-fluid" width="400" height="300">
+              </a>
+              <div class="gallery-info p-3">
+                <h4>PaintinSenior</h4>
+                <p>Sistema de gestão desenvolvido em PHP, voltado para clínicas de cuidados a idosos, com foco na otimização de processos e no aprimoramento do controle interno.</p>
+                <a href="#contact" class="read-more">
+                  <span>Entre em contato</span> <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/villeSite.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/villeSite.png" alt="Site Residencial Ville de la Vie" class="img-fluid" width="400" height="300">
+              </a>
+              <div class="gallery-info p-3">
+                <h4>Site Ville de la Vie</h4>
+                <p>Site institucional moderno e responsivo, desenvolvido para o residencial especializado no cuidado integral da pessoa idosa.</p>
+                <a href="https://villedelavie.com.br/" class="read-more">
+                  <span>Acesse</span> <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/sistemaVille.png" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/sistemaVille.png" alt="Sistema de Gestão para Ville de la Vie" class="img-fluid" width="400" height="300">
+              </a>
+              <div class="gallery-info p-3">
+                <h4>Sistema Ville de la Vie</h4>
+                <p>Solução personalizada em PHP para gerenciamento e controle das atividades e atendimentos do residencial.</p>
+                <a href="#contact" class="read-more">
+                  <span>Entre em Contato</span> <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/villeSite.png" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/villeSite.png" alt="Site Residencial Ville de la Vie" class="img-fluid">
-          </a>
-          <div class="gallery-info p-3">
-            <h4>Site Ville de la Vie</h4>
-            <p>Site institucional moderno e responsivo, desenvolvido para o residencial especializado no cuidado integral da pessoa idosa.</p>
-            <a href="https://villedelavie.com.br/" class="read-more">
-              <span>Acesse</span> <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4">
-        <div class="gallery-item">
-          <a href="assets/img/sistemaVille.png" class="glightbox" data-gallery="images-gallery">
-            <img src="assets/img/sistemaVille.png" alt="Sistema de Gestão para Ville de la Vie" class="img-fluid">
-          </a>
-          <div class="gallery-info p-3">
-            <h4>Sistema Ville de la Vie</h4>
-            <p>Solução personalizada em PHP para gerenciamento e controle das atividades e atendimentos do residencial.</p>
-            <a href="#contact" class="read-more">
-              <span>Entre em Contato</span> <i class="bi bi-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Fim da Seção Portfólio -->
+    </section><!-- Fim da Seção Portfólio -->
 
     <!-- Seção Depoimentos -->
     <section id="testimonials" class="testimonials section dark-background">
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="Fundo de depoimentos">
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="Fundo de depoimentos" width="1920" height="1080">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper init-swiper">
+        <div class="swiper init-swiper" role="region" aria-label="Carrossel de depoimentos">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -356,7 +378,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/cintya1.webp" class="testimonial-img" alt="Cintya Christemann">
+                <img src="assets/img/testimonials/cintya1.webp" class="testimonial-img" alt="Cintya Christmann" width="100" height="100">
                 <h3>Cintya Christmann</h3>
                 <h4>Empresária e Enfermeira</h4>
                 <div class="stars">
@@ -371,7 +393,7 @@
             </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Carlos Mendes">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Ana Paula" width="100" height="100">
                 <h3>Ana Paula</h3>
                 <h4>Gestor de TI</h4>
                 <div class="stars">
@@ -386,7 +408,7 @@
             </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Mariana Costa">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Mariana Costa" width="100" height="100">
                 <h3>Mariana Costa</h3>
                 <h4>Empreendedora</h4>
                 <div class="stars">
@@ -401,22 +423,7 @@
             </div>
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <img src="assets/img/testimonials/cintya1.webp" class="testimonial-img" alt="Cintya Christemann">
-                <h3>Cintya Christmann</h3>
-                <h4>Empresária e Enfermeira</h4>
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>A PaintinWeb criou um sistema sob medida que transformou a gestão da nossa clínica de idosos. Agora temos controle total, agilidade nos processos e muito mais segurança no cuidado com nossos pacientes. Um salto de qualidade que fez toda a diferença!</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="Juliana Lima">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="Juliano Lima" width="100" height="100">
                 <h3>Juliano Lima</h3>
                 <h4>Gerente de Marketing</h4>
                 <div class="stars">
@@ -446,7 +453,7 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="pic">
-                <img src="assets/img/joelP.jpg" class="img-fluid" alt="Joel Paintinger - Fundador e Desenvolvedor">
+                <img src="assets/img/joelP.jpg" class="img-fluid" alt="Joel Paintinger - Fundador e Desenvolvedor" width="200" height="200">
               </div>
               <div class="member-info">
                 <h4>Joel Paintinger</h4>
@@ -466,187 +473,181 @@
 
     <!-- Seção Preços -->
     <section id="pricing" class="pricing section bg-light py-5">
-  <div class="container text-center mb-5" data-aos="fade-up">
-    <h2 class="display-5 fw-bold">Nossos Planos</h2>
-    <p class="lead">Sites e sistemas web personalizados com <strong>PHP, HTML5, JavaScript e MySQL</strong>. Escolha o plano ideal para o seu projeto!</p>
-  </div>
+      <div class="container text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">Nossos Planos</h2>
+        <p class="lead">Sites e sistemas web personalizados com <strong>PHP, HTML5, JavaScript e MySQL</strong>. Escolha o plano ideal para o seu projeto!</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Plano Básico -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item border rounded p-4 shadow-sm h-100">
+              <h3 class="text-primary">Plano Básico</h3>
+              <p class="text-muted mb-3">Para quem precisa de um site institucional simples, com presença digital básica.</p>
+              <h4 class="price mb-3"><sup>R$</sup>1.200<span class="d-block fs-6 text-muted">valor único</span></h4>
+              <a href="#contact" class="btn btn-outline-primary w-100 mb-2">Solicitar Agora</a>
+              <p class="small text-center text-muted">Entrega em até 7 dias úteis</p>
+              <ul class="list-unstyled mt-4">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Até 5 páginas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Design responsivo</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Formulário de contato</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Integrações externas</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Painel administrativo</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> SEO</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Manutenção inclusa</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Plano Profissional -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item border rounded p-4 shadow-lg h-100 bg-white position-relative">
+              <div class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">Mais Popular</div>
+              <h3 class="text-success">Plano Profissional</h3>
+              <p class="text-muted mb-3">Para empresas que querem performance, presença digital sólida e gerenciamento de conteúdo.</p>
+              <h4 class="price mb-3"><sup>R$</sup>2.900<span class="d-block fs-6 text-muted">valor único</span></h4>
+              <a href="#contact" class="btn btn-success w-100 mb-2">Solicitar Orçamento</a>
+              <p class="small text-center text-muted">Prazo médio: 10 a 15 dias úteis</p>
+              <ul class="list-unstyled mt-4">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Até 15 páginas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Design responsivo</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Integração com APIs (WhatsApp, E-mail)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Painel de gerenciamento simples (PHP + MySQL)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte técnico por 30 dias</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Otimização básica para Google</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Sistemas personalizados</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Plano Premium -->
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item border rounded p-4 shadow-sm h-100">
+              <h3 class="text-dark">Plano Premium</h3>
+              <p class="text-muted mb-3">Projeto completo com sistema web personalizado, ideal para empresas e startups com demandas específicas.</p>
+              <h4 class="price mb-3"><sup>R$</sup>5.900<span class="d-block fs-6 text-muted">valor inicial</span></h4>
+              <a href="#contact" class="btn btn-dark w-100 mb-2">Agendar Consultoria</a>
+              <p class="small text-center text-muted">Prazo: 20+ dias úteis • Valor sob análise</p>
+              <ul class="list-unstyled mt-4">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Páginas ilimitadas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Design sob medida (UI/UX)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Painel completo (CRUD + relatórios)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Integrações com gateways, CRMs e APIs</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte premium + manutenção opcional</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> SEO avançado + Google Analytics</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Sistema 100% customizado (PHP, JS, MySQL)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Fim da Seção Preços -->
 
-  <div class="container">
-    <div class="row gy-4">
+    <!-- Como Funciona -->
+    <section id="processo" class="py-5 bg-white">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center fw-bold mb-4 text-primary">Como Funciona</h2>
+        <p class="lead text-center mb-5 text-muted">Veja como é simples contratar e receber seu site:</p>
+        <div class="row g-4 text-center">
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">1. Briefing</h5>
+              <p class="small text-muted mb-0">Recolhemos suas ideias, referências e objetivos.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">2. Desenvolvimento</h5>
+              <p class="small text-muted mb-0">Criamos seu site em PHP, HTML5, JS e MySQL.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">3. Aprovação</h5>
+              <p class="small text-muted mb-0">Você revisa o site e solicita ajustes finais.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">4. Publicação</h5>
+              <p class="small text-muted mb-0">Publicamos na Hostinger com domínio e e-mail profissional.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Plano Básico -->
-      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="pricing-item border rounded p-4 shadow-sm h-100">
-          <h3 class="text-primary">Plano Básico</h3>
-          <p class="text-muted mb-3">Para quem precisa de um site institucional simples, com presença digital básica.</p>
-          <h4 class="price mb-3"><sup>R$</sup>1.200<span class="d-block fs-6 text-muted">valor único</span></h4>
-          <a href="#contact" class="btn btn-outline-primary w-100 mb-2">Solicitar Agora</a>
-          <p class="small text-center text-muted">Entrega em até 7 dias úteis</p>
-          <ul class="list-unstyled mt-4">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Até 5 páginas</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Design responsivo</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Formulário de contato</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Integrações externas</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Painel administrativo</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> SEO</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Manutenção inclusa</li>
-          </ul>
+    <!-- Painel do Cliente -->
+    <section id="painel-cliente" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center fw-bold mb-4 text-primary">Painel do Cliente</h2>
+        <p class="lead text-center mb-4 text-muted">Cada cliente recebe uma área exclusiva com:</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <ul class="list-unstyled text-center fs-6">
+              <li>📁 <strong>Acesso</strong> a arquivos, senhas e banco de dados</li>
+              <li>🕓 <strong>Histórico</strong> de atualizações (changelog)</li>
+              <li>📝 <strong>Contrato digital</strong> + orientações de uso</li>
+              <li>📦 <strong>Backups</strong> e manuais técnicos (opcional)</li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Plano Profissional -->
-      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="pricing-item border rounded p-4 shadow-lg h-100 bg-white position-relative">
-          <div class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">Mais Popular</div>
-          <h3 class="text-success">Plano Profissional</h3>
-          <p class="text-muted mb-3">Para empresas que querem performance, presença digital sólida e gerenciamento de conteúdo.</p>
-          <h4 class="price mb-3"><sup>R$</sup>2.900<span class="d-block fs-6 text-muted">valor único</span></h4>
-          <a href="#contact" class="btn btn-success w-100 mb-2">Solicitar Orçamento</a>
-          <p class="small text-center text-muted">Prazo médio: 10 a 15 dias úteis</p>
-          <ul class="list-unstyled mt-4">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Até 15 páginas</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Design responsivo</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Integração com APIs (WhatsApp, E-mail)</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Painel de gerenciamento simples (PHP + MySQL)</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte técnico por 30 dias</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Otimização básica para Google</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Sistemas personalizados</li>
-          </ul>
+    <!-- Manutenção e Suporte -->
+    <section id="manutencao" class="py-5 bg-white">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center fw-bold mb-4 text-primary">Manutenção e Suporte</h2>
+        <p class="lead text-center mb-5 text-muted">Contrate suporte contínuo para manter seu site seguro e atualizado.</p>
+        <div class="row text-center gy-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-primary fw-bold">Plano Básico</h5>
+              <p class="text-muted mb-2">R$ 80/mês</p>
+              <ul class="list-unstyled small">
+                <li>✔ Backup mensal</li>
+                <li>✔ Suporte por e-mail</li>
+                <li>✖ Novas páginas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-success fw-bold">Plano Intermediário</h5>
+              <p class="text-muted mb-2">R$ 150/mês</p>
+              <ul class="list-unstyled small">
+                <li>✔ Atualizações técnicas</li>
+                <li>✔ Relatórios mensais</li>
+                <li>✔ Correções de bugs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-dark fw-bold">Plano Premium</h5>
+              <p class="text-muted mb-2">R$ 250/mês</p>
+              <ul class="list-unstyled small">
+                <li>✔ Tudo dos anteriores</li>
+                <li>✔ Novas páginas sob demanda</li>
+                <li>✔ Suporte via WhatsApp 24h</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <!-- Plano Premium -->
-      <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-        <div class="pricing-item border rounded p-4 shadow-sm h-100">
-          <h3 class="text-dark">Plano Premium</h3>
-          <p class="text-muted mb-3">Projeto completo com sistema web personalizado, ideal para empresas e startups com demandas específicas.</p>
-          <h4 class="price mb-3"><sup>R$</sup>5.900<span class="d-block fs-6 text-muted">valor inicial</span></h4>
-          <a href="#contact" class="btn btn-dark w-100 mb-2">Agendar Consultoria</a>
-          <p class="small text-center text-muted">Prazo: 20+ dias úteis • Valor sob análise</p>
-          <ul class="list-unstyled mt-4">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Páginas ilimitadas</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Design sob medida (UI/UX)</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Painel completo (CRUD + relatórios)</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Integrações com gateways, CRMs e APIs</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte premium + manutenção opcional</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> SEO avançado + Google Analytics</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Sistema 100% customizado (PHP, JS, MySQL)</li>
-          </ul>
+    <!-- Contrato e Garantia -->
+    <section id="contrato" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center fw-bold mb-4 text-primary">Contrato e Garantia</h2>
+        <p class="lead text-center mb-4 text-muted">Segurança, clareza e garantia de entrega no seu projeto.</p>
+        <div class="text-center small text-muted">
+          <p>📄 Contrato com escopo, prazos e valores definidos</p>
+          <p>✅ Garantia de suporte por 15 dias após entrega</p>
+          <p>🔐 Seus dados hospedados com segurança na Hostinger</p>
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
-<!-- COMO FUNCIONA -->
-<section id="processo" class="py-5 bg-white">
-  <div class="container" data-aos="fade-up">
-    <h2 class="text-center fw-bold mb-4 text-primary">Como Funciona</h2>
-    <p class="lead text-center mb-5 text-muted">Veja como é simples contratar e receber seu site:</p>
-    <div class="row g-4 text-center">
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">1. Briefing</h5>
-          <p class="small text-muted mb-0">Recolhemos suas ideias, referências e objetivos.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">2. Desenvolvimento</h5>
-          <p class="small text-muted mb-0">Criamos seu site em PHP, HTML5, JS e MySQL.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">3. Aprovação</h5>
-          <p class="small text-muted mb-0">Você revisa o site e solicita ajustes finais.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">4. Publicação</h5>
-          <p class="small text-muted mb-0">Publicamos na Hostinger com domínio e e-mail profissional.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PAINEL DO CLIENTE -->
-<section id="painel-cliente" class="py-5 bg-light">
-  <div class="container" data-aos="fade-up">
-    <h2 class="text-center fw-bold mb-4 text-primary">Painel do Cliente</h2>
-    <p class="lead text-center mb-4 text-muted">Cada cliente recebe uma área exclusiva com:</p>
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <ul class="list-unstyled text-center fs-6">
-          <li>📁 <strong>Acesso</strong> a arquivos, senhas e banco de dados</li>
-          <li>🕓 <strong>Histórico</strong> de atualizações (changelog)</li>
-          <li>📝 <strong>Contrato digital</strong> + orientações de uso</li>
-          <li>📦 <strong>Backups</strong> e manuais técnicos (opcional)</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MANUTENÇÃO E SUPORTE -->
-<section id="manutencao" class="py-5 bg-white">
-  <div class="container" data-aos="fade-up">
-    <h2 class="text-center fw-bold mb-4 text-primary">Manutenção e Suporte</h2>
-    <p class="lead text-center mb-5 text-muted">Contrate suporte contínuo para manter seu site seguro e atualizado.</p>
-    <div class="row text-center gy-4">
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-primary fw-bold">Plano Básico</h5>
-          <p class="text-muted mb-2">R$ 80/mês</p>
-          <ul class="list-unstyled small">
-            <li>✔ Backup mensal</li>
-            <li>✔ Suporte por e-mail</li>
-            <li>✖ Novas páginas</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-success fw-bold">Plano Intermediário</h5>
-          <p class="text-muted mb-2">R$ 150/mês</p>
-          <ul class="list-unstyled small">
-            <li>✔ Atualizações técnicas</li>
-            <li>✔ Relatórios mensais</li>
-            <li>✔ Correções de bugs</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-dark fw-bold">Plano Premium</h5>
-          <p class="text-muted mb-2">R$ 250/mês</p>
-          <ul class="list-unstyled small">
-            <li>✔ Tudo dos anteriores</li>
-            <li>✔ Novas páginas sob demanda</li>
-            <li>✔ Suporte via WhatsApp 24h</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTRATO E GARANTIA -->
-<section id="contrato" class="py-5 bg-light">
-  <div class="container" data-aos="fade-up">
-    <h2 class="text-center fw-bold mb-4 text-primary">Contrato e Garantia</h2>
-    <p class="lead text-center mb-4 text-muted">Segurança, clareza e garantia de entrega no seu projeto.</p>
-    <div class="text-center small text-muted">
-      <p>📄 Contrato com escopo, prazos e valores definidos</p>
-      <p>✅ Garantia de suporte por 15 dias após entrega</p>
-      <p>🔐 Seus dados hospedados com segurança na Hostinger</p>
-    </div>
-  </div>
-</section>
-
-<!-- Fim da Seção Preços -->
+    </section>
 
     <!-- Seção FAQ -->
     <section id="faq" class="faq section light-background">
@@ -655,9 +656,7 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
               <h3><span>Perguntas</span> <strong>Frequentes</strong></h3>
-              <p>
-                Confira as dúvidas mais comuns sobre nossos serviços de desenvolvimento web.
-              </p>
+              <p>Confira as dúvidas mais comuns sobre nossos serviços de desenvolvimento web.</p>
             </div>
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-item faq-active">
@@ -687,7 +686,7 @@
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2">
-            <img src="assets/img/faq.jpg" class="img-fluid" alt="Imagem de perguntas frequentes" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/faq.jpg" class="img-fluid" alt="Imagem de perguntas frequentes" data-aos="zoom-in" data-aos-delay="100" width="500" height="400">
           </div>
         </div>
       </div>
@@ -731,7 +730,7 @@
                   <input type="text" name="name" class="form-control" placeholder="Seu Nome" required aria-required="true">
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Seu E-mail" required aria-required="true">
+                  <input type="email" class="form-control" name="email" placeholder="Seu E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-required="true">
                 </div>
                 <div class="col-md-12">
                   <input type="text" class="form-control" name="subject" placeholder="Assunto" required aria-required="true">
@@ -768,10 +767,10 @@
             <p><strong>E-mail:</strong> <span><a href="mailto:paintinger1@hotmail.com">paintinger1@hotmail.com</a></span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/paintinger" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/paintinger" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/joelpaintinger" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://br.linkedin.com/in/joel-paintinger-36066876" target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
@@ -787,18 +786,21 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Nossos Serviços</h4>
           <ul>
-            <li><a href="#">Desenvolvimento PHP</a></li>
-            <li><a href="#">Sites Responsivos</a></li>
-            <li><a href="#">JavaScript Interativo</a></li>
-            <li><a href="#">Bancos de Dados</a></li>
-            <li><a href="#">Manutenção</a></li>
+            <li><a href="#features">Desenvolvimento PHP</a></li>
+            <li><a href="#features">Sites Responsivos</a></li>
+            <li><a href="#features">JavaScript Interativo</a></li>
+            <li><a href="#features">Bancos de Dados</a></li>
+            <li><a href="#manutencao">Manutenção</a></li>
           </ul>
         </div>
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Newsletter</h4>
           <p>Inscreva-se para receber novidades!</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email" placeholder="Seu E-mail" required aria-required="true"><input type="submit" value="Inscrever"></div>
+            <div class="newsletter-form">
+              <input type="email" name="email" placeholder="Seu E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required aria-required="true">
+              <input type="submit" value="Inscrever">
+            </div>
             <div class="loading">Carregando</div>
             <div class="error-message"></div>
             <div class="sent-message">Sua inscrição foi enviada. Obrigado!</div>
@@ -815,21 +817,21 @@
   </footer><!-- Fim do Rodapé -->
 
   <!-- Botão de Voltar ao Topo -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Voltar ao topo"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Arquivos JS de Vendors -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script defer src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script defer src="assets/vendor/php-email-form/validate.js"></script>
+  <script defer src="assets/vendor/aos/aos.js"></script>
+  <script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script defer src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Arquivo JS Principal -->
-  <script src="assets/js/main.js"></script>
+  <script defer src="assets/js/main.js"></script>
 
 </body>
 
