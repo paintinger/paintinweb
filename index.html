@@ -695,62 +695,84 @@
 
     <!-- Seção Contato -->
     <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contato</h2>
-        <div><span>Entre em</span> <span class="description-title">Contato</span></div>
-      </div>
-      <div class="container" data-aos="fade" data-aos-delay="100">
-        <div class="row gy-4">
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Endereço</h3>
-                <p>Passo Fundo, RS</p>
-              </div>
-            </div>
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Telefone / WhatsApp</h3>
-                <p><a href="https://wa.me/5554981244964" target="_blank">(54) 98124-4964</a></p>
-              </div>
-            </div>
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>E-mail</h3>
-                <p><a href="mailto:paintinger1@hotmail.com">paintinger1@hotmail.com</a></p>
-              </div>
-            </div>
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contato</h2>
+    <div><span>Entre em</span> <span class="description-title">Contato</span></div>
+  </div>
+  <div class="container" data-aos="fade" data-aos-delay="100">
+    <div class="row gy-4">
+      
+      <!-- Informações de Contato -->
+      <div class="col-lg-4">
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt flex-shrink-0"></i>
+          <div>
+            <h3>Endereço</h3>
+            <p>Passo Fundo, RS</p>
           </div>
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Seu Nome" required aria-required="true">
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Seu E-mail" required aria-required="true">
-                </div>
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required aria-required="true">
-                </div>
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required aria-required="true"></textarea>
-                </div>
-                <div class="col-md-12 text-center">
-                  <div class="loading">Carregando</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Sua mensagem foi enviada. Obrigado!</div>
-                  <button type="submit">Enviar Mensagem</button>
-                </div>
-              </div>
-            </form>
+        </div>
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone flex-shrink-0"></i>
+          <div>
+            <h3>Telefone / WhatsApp</h3>
+            <p><a href="https://wa.me/5554981244964" target="_blank">(54) 98124-4964</a></p>
+          </div>
+        </div>
+        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope flex-shrink-0"></i>
+          <div>
+            <h3>E-mail</h3>
+            <p><a href="mailto:paintinger1@hotmail.com">paintinger1@hotmail.com</a></p>
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Contato -->
+
+      <!-- Formulário -->
+      <div class="col-lg-8">
+        <form onsubmit="enviarEmail(); return false;" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <input type="text" id="nome" class="form-control" placeholder="Seu Nome" required>
+            </div>
+            <div class="col-md-6">
+              <input type="email" id="email" class="form-control" placeholder="Seu E-mail" required>
+            </div>
+            <div class="col-md-12">
+              <input type="text" id="assunto" class="form-control" placeholder="Assunto" required>
+            </div>
+            <div class="col-md-12">
+              <textarea id="mensagem" class="form-control" rows="6" placeholder="Mensagem" required></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <button type="submit">Enviar Mensagem</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript para mailto -->
+<script>
+  function enviarEmail() {
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value;
+
+    const destinatario = "paintinger1@hotmail.com";
+    const assuntoFinal = encodeURIComponent("Contato via site: " + assunto);
+    const corpo = encodeURIComponent(
+      `Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`
+    );
+
+    // Abre o app de e-mail com os dados preenchidos
+    window.location.href = `mailto:${destinatario}?subject=${assuntoFinal}&body=${corpo}`;
+  }
+</script>
+<!-- Fim da Seção Contato -->
 
   </main>
 
