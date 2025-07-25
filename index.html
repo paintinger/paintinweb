@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,7 +9,6 @@
   <meta name="keywords" content="PaintinWeb, desenvolvimento web, sites Passo Fundo, sistemas PHP, HTML, JavaScript, design responsivo">
   <meta name="author" content="PaintinWeb">
 
-  <!-- Meta Tags para Redes Sociais -->
   <meta property="og:title" content="PaintinWeb - Desenvolvimento de Sites e Sistemas">
   <meta property="og:description" content="Soluções digitais modernas em PHP, HTML e JavaScript para empresas em Passo Fundo, RS.">
   <meta property="og:image" content="https://seu-usuario.github.io/seu-repositorio/assets/img/logo.png">
@@ -20,29 +18,43 @@
   <meta name="twitter:description" content="Soluções digitais modernas em PHP, HTML e JavaScript.">
   <meta name="twitter:image" content="https://seu-usuario.github.io/seu-repositorio/assets/img/logo.png">
 
-  <!-- Favicons -->
   <link href="assets/img/logofa.png" rel="icon">
   <link href="assets/img/logofa.png" rel="apple-touch-icon">
 
-  <!-- Fontes -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Arquivos CSS de Vendors -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Arquivo CSS Principal -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Estilos para a transição suave do FAQ */
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out; /* Transição para altura */
+    }
+
+    .faq-item.faq-active .faq-content {
+      max-height: 200px; /* Ajuste conforme o conteúdo máximo do seu FAQ */
+      transition: max-height 0.3s ease-in;
+    }
+
+    .faq-item.faq-active .faq-toggle {
+      transform: rotate(90deg);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
 </head>
 
 <body class="index-page">
 
-  <!-- Cabeçalho -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
@@ -63,7 +75,6 @@
 
   <main class="main">
 
-    <!-- Seção Hero -->
     <section id="hero" class="hero section dark-background">
       <img src="assets/img/hero-bg-2.jpg" alt="Fundo digital com elementos tecnológicos" class="hero-bg">
       <div class="container">
@@ -94,10 +105,7 @@
           <use href="#wave-path" x="50" y="9" fill="rgba(255,255,255,0.3)"></use>
         </g>
       </svg>
-    </section><!-- Fim da Seção Hero -->
-
-    <!-- Seção Sobre -->
-    <section id="about" class="about section">
+    </section><section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5">
           <div class="col-xl-5 content">
@@ -142,10 +150,7 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Sobre -->
-
-    <!-- Seção Serviços -->
-    <section id="features" class="features section">
+    </section><section id="features" class="features section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Serviços</h2>
         <div><span>Conheça Nossos</span> <span class="description-title">Serviços Exclusivos</span></div>
@@ -178,10 +183,7 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Serviços -->
-
-    <!-- Seção Estatísticas -->
-    <section id="stats" class="stats section light-background">
+    </section><section id="stats" class="stats section light-background">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
@@ -214,10 +216,7 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Estatísticas -->
-
-    <!-- Seção Detalhes -->
-    <section id="details" class="details section">
+    </section><section id="details" class="details section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Detalhes</h2>
         <div><span>Conheça Nossos</span> <span class="description-title">Diferenciais</span></div>
@@ -284,10 +283,7 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Detalhes -->
-
-    <!-- Seção Portfólio -->
-    <section id="gallery" class="gallery section">
+    </section><section id="gallery" class="gallery section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfólio</h2>
         <div><span>Confira Nosso</span> <span class="description-title">Trabalho</span></div>
@@ -316,7 +312,7 @@
               <div class="gallery-info p-3">
                 <h4>Site Ville de la Vie</h4>
                 <p>Site institucional moderno e responsivo, desenvolvido para o residencial especializado no cuidado integral da pessoa idosa.</p>
-                <a href="https://villedelavie.com.br/" class="read-more">
+                <a href="https://villedelavie.com.br/" class="read-more" target="_blank">
                   <span>Acesse</span> <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -338,11 +334,10 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Portfólio -->
-
-    <!-- Seção Depoimentos -->
+    </section>
+    
     <section id="testimonials" class="testimonials section dark-background">
-      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="Fundo com textura digital para depoimentos">
+      <img src="assets/img/1tec.jpg" class="testimonials-bg" alt="Fundo com textura digital para depoimentos">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
@@ -425,9 +420,8 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </section><!-- Fim da Seção Depoimentos -->
-
-    <!-- Seção Equipe -->
+    </section>
+    
     <section id="team" class="team section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Equipe</h2>
@@ -454,9 +448,8 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Equipe -->
-
-    <!-- Seção Preços -->
+    </section>
+    
     <section id="pricing" class="pricing section bg-light py-5">
       <div class="container text-center mb-5" data-aos="fade-up">
         <h2 class="display-5 fw-bold">Nossos Planos</h2>
@@ -464,7 +457,6 @@
       </div>
       <div class="container">
         <div class="row gy-4">
-          <!-- Plano Básico -->
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item border rounded p-4 shadow-sm h-100">
               <h3 class="text-primary">Plano Básico</h3>
@@ -483,7 +475,6 @@
               </ul>
             </div>
           </div>
-          <!-- Plano Profissional -->
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="pricing-item border rounded p-4 shadow-lg h-100 bg-white position-relative">
               <div class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">Mais Popular</div>
@@ -503,7 +494,6 @@
               </ul>
             </div>
           </div>
-          <!-- Plano Premium -->
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="pricing-item border rounded p-4 shadow-sm h-100">
               <h3 class="text-dark">Plano Premium</h3>
@@ -524,118 +514,115 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Preços -->
+    </section>
     
-    <!-- Seção: Como Funciona -->
-<section id="processo" class="py-5 bg-white">
-  <div class="container" data-aos="fade-up">
-    <h2>Como Funciona</h2>
-    <p class="lead text-center mb-5 text-muted">Veja como é simples contratar e receber seu site:</p>
-    <div class="row g-4 text-center">
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">1. Briefing</h5>
-          <p class="small text-muted mb-0">Coletamos suas ideias, referências e metas para o projeto.</p>
+    <section id="processo" class="py-5 bg-white">
+      <div class="container" data-aos="fade-up">
+        <h2>Como Funciona</h2>
+        <p class="lead text-center mb-5 text-muted">Veja como é simples contratar e receber seu site:</p>
+        <div class="row g-4 text-center">
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">1. Briefing</h5>
+              <p class="small text-muted mb-0">Coletamos suas ideias, referências e metas para o projeto.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">2. Desenvolvimento</h5>
+              <p class="small text-muted mb-0">Criamos seu site com PHP, HTML5, JavaScript e MySQL.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">3. Aprovação</h5>
+              <p class="small text-muted mb-0">Você avalia o site e solicita ajustes, se necessário.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="fw-bold text-primary">4. Publicação</h5>
+              <p class="small text-muted mb-0">Publicamos o site com domínio e e-mail profissional na Hostinger.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">2. Desenvolvimento</h5>
-          <p class="small text-muted mb-0">Criamos seu site com PHP, HTML5, JavaScript e MySQL.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">3. Aprovação</h5>
-          <p class="small text-muted mb-0">Você avalia o site e solicita ajustes, se necessário.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="fw-bold text-primary">4. Publicação</h5>
-          <p class="small text-muted mb-0">Publicamos o site com domínio e e-mail profissional na Hostinger.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Seção: Diferenciais -->
-<section id="diferenciais" class="py-5 bg-light">
-  <div class="container" data-aos="fade-up">
-    <h2>Por que escolher meu serviço?</h2>
-    <p class="lead text-center mb-4 text-muted">Confira os diferenciais que ofereço em cada projeto:</p>
-    <div class="row text-center g-4">
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-white">
-          <h5 class="fw-bold text-success">🔒 Segurança</h5>
-          <p class="small text-muted mb-0">Sites otimizados com certificados SSL, proteção contra invasões e backups regulares.</p>
+    <section id="diferenciais" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2>Por que escolher meu serviço?</h2>
+        <p class="lead text-center mb-4 text-muted">Confira os diferenciais que ofereço em cada projeto:</p>
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <h5 class="fw-bold text-success">🔒 Segurança</h5>
+              <p class="small text-muted mb-0">Sites otimizados com certificados SSL, proteção contra invasões e backups regulares.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <h5 class="fw-bold text-success">🚀 Performance</h5>
+              <p class="small text-muted mb-0">Sites rápidos, otimizados para SEO e com excelente usabilidade em qualquer dispositivo.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <h5 class="fw-bold text-success">🤝 Atendimento Direto</h5>
+              <p class="small text-muted mb-0">Você fala diretamente comigo durante todo o processo. Nada de burocracia ou intermediários.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-white">
-          <h5 class="fw-bold text-success">🚀 Performance</h5>
-          <p class="small text-muted mb-0">Sites rápidos, otimizados para SEO e com excelente usabilidade em qualquer dispositivo.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-white">
-          <h5 class="fw-bold text-success">🤝 Atendimento Direto</h5>
-          <p class="small text-muted mb-0">Você fala diretamente comigo durante todo o processo. Nada de burocracia ou intermediários.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-    <!-- Manutenção e Suporte -->
-<section id="manutencao" class="py-5 bg-white">
-  <div class="container" data-aos="fade-up">
-    <h2>Manutenção e Suporte</h2>
-    <p class="lead text-center mb-5 text-muted">
-      Garanta segurança, desempenho e atualizações constantes para o seu site com nossos planos de suporte contínuo.
-    </p>
-    <div class="row text-center gy-4">
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-primary fw-bold">Plano Básico</h5>
-          <p class="text-muted mb-2">R$ 150,00/mês</p>
-          <ul class="list-unstyled small">
-            <li>✔ Backup mensal</li>
-            <li>✔ Suporte por e-mail</li>
-            <li>✖ Criação de novas páginas</li>
-          </ul>
+    <section id="manutencao" class="py-5 bg-white">
+      <div class="container" data-aos="fade-up">
+        <h2>Manutenção e Suporte</h2>
+        <p class="lead text-center mb-5 text-muted">
+          Garanta segurança, desempenho e atualizações constantes para o seu site com nossos planos de suporte contínuo.
+        </p>
+        <div class="row text-center gy-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-primary fw-bold">Plano Básico</h5>
+              <p class="text-muted mb-2">R$ 150,00/mês</p>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Backup mensal</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte por e-mail</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Criação de novas páginas</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Atualizações de conteúdo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-success fw-bold">Plano Intermediário</h5>
+              <p class="text-muted mb-2">R$ 300,00/mês</p>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Atualizações técnicas regulares</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Relatórios mensais de desempenho</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Correção de erros e bugs</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Criação de novas páginas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-dark fw-bold">Plano Premium</h5>
+              <p class="text-muted mb-2">R$ 500,00/mês</p>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Tudo incluído nos planos anteriores</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Criação de novas páginas sob demanda</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte via WhatsApp 24 horas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Otimização e melhorias contínuas</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-success fw-bold">Plano Intermediário</h5>
-          <p class="text-muted mb-2">R$ 300,00/mês</p>
-          <ul class="list-unstyled small">
-            <li>✔ Atualizações técnicas regulares</li>
-            <li>✔ Relatórios mensais de desempenho</li>
-            <li>✔ Correção de erros e bugs</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-dark fw-bold">Plano Premium</h5>
-          <p class="text-muted mb-2">R$ 500,00/mês</p>
-          <ul class="list-unstyled small">
-            <li>✔ Tudo incluído nos planos anteriores</li>
-            <li>✔ Criação de novas páginas sob demanda</li>
-            <li>✔ Suporte via WhatsApp 24 horas</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-    <!-- Contrato e Garantia -->
     <section id="contrato" class="py-5 bg-light">
       <div class="container" data-aos="fade-up">
         <h2>Contrato e Garantia</h2>
@@ -648,7 +635,6 @@
       </div>
     </section>
 
-    <!-- Seção FAQ -->
     <section id="faq" class="faq section light-background">
       <div class="container-fluid">
         <div class="row gy-4">
@@ -658,7 +644,7 @@
               <p>Confira as dúvidas mais comuns sobre nossos serviços de desenvolvimento web.</p>
             </div>
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-              <div class="faq-item">
+              <div class="faq-item" role="button" aria-expanded="false" tabindex="0">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Quais tecnologias vocês utilizam?</h3>
                 <div class="faq-content">
@@ -666,7 +652,7 @@
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-              <div class="faq-item">
+              <div class="faq-item" role="button" aria-expanded="false" tabindex="0">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Vocês oferecem suporte após a entrega do projeto?</h3>
                 <div class="faq-content">
@@ -674,7 +660,7 @@
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
-              <div class="faq-item">
+              <div class="faq-item" role="button" aria-expanded="false" tabindex="0">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Quanto tempo leva para desenvolver um site?</h3>
                 <div class="faq-content">
@@ -689,17 +675,13 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção FAQ -->
-
-    <!-- Seção Contato -->
-    <section id="contact" class="contact section">
+    </section><section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato</h2>
         <div><span>Entre em</span> <span class="description-title">Contato</span></div>
       </div>
       <div class="container" data-aos="fade" data-aos-delay="100">
         <div class="row gy-4">
-          <!-- Informações de Contato -->
           <div class="col-lg-4">
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
               <i class="bi bi-geo-alt flex-shrink-0"></i>
@@ -723,9 +705,8 @@
               </div>
             </div>
           </div>
-          <!-- Formulário com Formspree -->
           <div class="col-lg-8">
-            <form action="https://formspree.io/f/seu-endpoint" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/xbjnjzlr" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
                 <div class="col-md-6">
                   <input type="text" name="nome" id="nome" class="form-control" placeholder="Seu Nome" required aria-label="Seu Nome" lang="pt-br">
@@ -750,11 +731,8 @@
           </div>
         </div>
       </div>
-    </section><!-- Fim da Seção Contato -->
+    </section></main>
 
-  </main>
-
-  <!-- Rodapé -->
   <footer id="footer" class="footer dark-background">
     <div class="container footer-top">
       <div class="row gy-4">
@@ -768,10 +746,10 @@
             <p><strong>E-mail:</strong> <span><a href="mailto:paintinger1@hotmail.com">paintinger1@hotmail.com</a></span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href="https://x.com/paintinger" target="_blank"><i class="bi bi-twitter-x"></i></a>
-            <a href="https://www.facebook.com/paintinger" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/joelpaintinger" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://br.linkedin.com/in/joel-paintinger-36066876" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/paintinger" target="_blank" aria-label="Twitter PaintinWeb"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/paintinger" target="_blank" aria-label="Facebook PaintinWeb"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/joelpaintinger" target="_blank" aria-label="Instagram PaintinWeb"><i class="bi bi-instagram"></i></a>
+            <a href="https://br.linkedin.com/in/joel-paintinger-36066876" target="_blank" aria-label="LinkedIn PaintinWeb"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
         <div class="col-lg-2 col-md-3 footer-links">
@@ -797,8 +775,7 @@
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Newsletter</h4>
           <p>Inscreva-se para receber novidades!</p>
-          <form action="https://formspree.io/f/seu-endpoint-newsletter" method="POST" class="php-email-form">
-            <div class="newsletter-form">
+          <form action="https://formspree.io/f/xbjnjzlr" method="POST" class="php-email-form"> <div class="newsletter-form">
               <input type="email" name="email" placeholder="Seu E-mail" required aria-required="true" aria-label="Seu E-mail" lang="pt-br">
               <input type="submit" value="Inscrever">
             </div>
@@ -815,28 +792,22 @@
         Desenvolvido por <a href="#">Joel Paintinger</a> | Distribuído por <a href="#">PaintinWeb</a>
       </div>
     </div>
-  </footer><!-- Fim do Rodapé -->
+  </footer><a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Botão de Voltar ao Topo -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Arquivos JS de Vendors -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Arquivo JS Principal -->
   <script src="assets/js/main.js"></script>
-  <!-- JavaScript para FAQ Interativo -->
   <script>
     document.querySelectorAll('.faq-item').forEach(item => {
       item.addEventListener('click', () => {
-        item.classList.toggle('faq-active');
+        const isActive = item.classList.toggle('faq-active');
+        item.setAttribute('aria-expanded', isActive);
       });
     });
   </script>
