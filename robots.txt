@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /assets/
+Sitemap: https://paintinger.github.io/paintinweb/sitemap.xml
