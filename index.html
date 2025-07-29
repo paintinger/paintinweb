@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>PaintinWeb - Desenvolvimento de Sites e Sistemas em Passo Fundo</title>
-  <meta name="description" content="Desenvolvimento de sites e sistemas personalizados em PHP, HTML e JavaScript em Passo Fundo, RS. Soluções digitais modernas para empresas.">
-  <meta name="keywords" content="PaintinWeb, desenvolvimento web, sites Passo Fundo, sistemas PHP, HTML, JavaScript, design responsivo">
+  <meta name="description" content="Desenvolvimento de sites e sistemas personalizados em PHP, HTML e JavaScript em Passo Fundo, RS. Soluções modernas para empresas. Fale conosco!">
+  <meta name="keywords" content="desenvolvimento web Passo Fundo, sistemas PHP Passo Fundo, sites responsivos, PaintinWeb, HTML5, JavaScript, Passo Fundo RS">
   <meta name="author" content="PaintinWeb">
-  <meta property="og:title" content="PaintinWeb - Desenvolvimento de Sites e Sistemas">
-  <meta property="og:description" content="Soluções digitais modernas em PHP, HTML e JavaScript para empresas em Passo Fundo, RS.">
+  <meta property="og:title" content="PaintinWeb - Desenvolvimento de Sites e Sistemas em Passo Fundo">
+  <meta property="og:description" content="Soluções digitais em PHP, HTML e JavaScript para empresas em Passo Fundo, RS. Sites responsivos e sistemas personalizados.">
   <meta property="og:image" content="https://paintinger.github.io/paintinweb/assets/img/logo.png">
   <meta property="og:url" content="https://paintinger.github.io/paintinweb">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PaintinWeb - Desenvolvimento de Sites e Sistemas">
-  <meta name="twitter:description" content="Soluções digitais modernas em PHP, HTML e JavaScript.">
+  <meta name="twitter:title" content="PaintinWeb - Desenvolvimento de Sites e Sistemas em Passo Fundo">
+  <meta name="twitter:description" content="Soluções digitais em PHP, HTML e JavaScript para empresas em Passo Fundo, RS.">
   <meta name="twitter:image" content="https://paintinger.github.io/paintinweb/assets/img/logo.png">
+  <link rel="canonical" href="https://paintinger.github.io/paintinweb/">
 
   <link href="assets/img/logofa.png" rel="icon">
   <link href="assets/img/logofa.png" rel="apple-touch-icon">
@@ -36,19 +37,35 @@
     .faq-content {
       max-height: 0;
       overflow: hidden;
-      transition: max-height 0.3s ease-out; /* Transição para altura */
+      transition: max-height 0.3s ease-out;
     }
-
     .faq-item.faq-active .faq-content {
-      max-height: 200px; /* Ajuste conforme o conteúdo máximo do seu FAQ */
+      max-height: 200px;
       transition: max-height 0.3s ease-in;
     }
-
     .faq-item.faq-active .faq-toggle {
       transform: rotate(90deg);
       transition: transform 0.3s ease-in-out;
     }
   </style>
+
+  <!-- Schema Markup para LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PaintinWeb",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Passo Fundo",
+      "addressRegion": "RS",
+      "addressCountry": "BR"
+    },
+    "telephone": "+5554981244964",
+    "url": "https://paintinger.github.io/paintinweb",
+    "description": "Desenvolvimento de sites e sistemas personalizados em PHP, HTML e JavaScript em Passo Fundo, RS."
+  }
+  </script>
 </head>
 
 <body class="index-page">
@@ -56,7 +73,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename"><img src="assets/img/logofa.png" alt="Logo PaintinWeb"> PaintinWeb</h1>
+        <h1 class="sitename"><img src="assets/img/logofa.png" alt="Logo PaintinWeb" loading="lazy"> PaintinWeb</h1>
       </a>
       <nav id="navmenu" class="navmenu">
         <ul>
@@ -74,15 +91,15 @@
   <main class="main">
 
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg-2.jpg" alt="Fundo digital com elementos tecnológicos" class="hero-bg">
+      <img src="assets/img/hero-bg-2.jpg" alt="Desenvolvimento web em Passo Fundo" class="hero-bg" loading="lazy">
       <div class="container">
         <div class="row gy-4 justify-content-between">
           <div class="col-lg-4 order-lg-last hero-img" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/logo.png" class="img-fluid animated" alt="Ilustração de desenvolvimento web" aria-label="Ilustração de desenvolvimento web">
+            <img src="assets/img/logo.png" class="img-fluid animated" alt="Desenvolvimento de sites e sistemas em Passo Fundo" loading="lazy" aria-label="Ilustração de desenvolvimento web">
           </div>
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-in">
-            <h1>Desenvolvimento de Sites e <span>Sistemas em Passo Fundo</span> com a <strong>PaintinWeb</strong></h1>
-            <p>Especialista em criar sistemas e sites sob medida com PHP, HTML e JavaScript — perfeitos para empresas que querem se destacar, inovar e alcançar mais resultados.</p>
+            <h1>Desenvolvimento de Sites e <span>Sistemas Personalizados em Passo Fundo</span> com a <strong>PaintinWeb</strong></h1>
+            <p>Especialista em criar sites e sistemas sob medida com PHP, HTML e JavaScript para empresas em Passo Fundo, RS, que querem se destacar e alcançar resultados.</p>
             <div class="d-flex">
               <a href="#about" class="btn-get-started">Descubra como</a>
             </div>
@@ -91,7 +108,7 @@
       </div>
       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
-          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+          <path id="wave-path" d="M-160 44 Pudding 30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
         </defs>
         <g class="wave1">
           <use href="#wave-path" x="50" y="3" fill="rgba(255,255,255,0.1)"></use>
@@ -103,13 +120,15 @@
           <use href="#wave-path" x="50" y="9" fill="rgba(255,255,255,0.3)"></use>
         </g>
       </svg>
-    </section><section id="about" class="about section">
+    </section>
+
+    <section id="about" class="about section">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-xl-center gy-5">
           <div class="col-xl-5 content">
             <h3>Sobre a PaintinWeb</h3>
             <h2>Soluções Digitais em Passo Fundo</h2>
-            <p>Na PaintinWeb, transformamos ideias em experiências digitais únicas. Desenvolvemos sistemas e sites personalizados com foco em desempenho, segurança e design moderno, utilizando tecnologias como PHP, HTML e JavaScript.</p>
+            <p>Na PaintinWeb, transformamos ideias em experiências digitais únicas para empresas em Passo Fundo, RS. Desenvolvemos <a href="#features">sites e sistemas personalizados</a> com foco em desempenho, segurança e design moderno, utilizando tecnologias como PHP, HTML e JavaScript.</p>
             <a href="#contact" class="read-more">
               <span>Fale com a Gente</span><i class="bi bi-arrow-right"></i>
             </a>
@@ -120,38 +139,40 @@
                 <div class="icon-box">
                   <i class="bi bi-code-slash"></i>
                   <h3>Desenvolvimento em PHP</h3>
-                  <p>Construímos sistemas robustos, escaláveis e sob medida para atender às demandas específicas da sua empresa.</p>
+                  <p>Construímos sistemas robustos e escaláveis para atender às demandas específicas do seu negócio em Passo Fundo.</p>
                 </div>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box">
                   <i class="bi bi-globe"></i>
                   <h3>Sites Responsivos</h3>
-                  <p>Design elegante e funcional, com adaptação perfeita para celulares, tablets e desktops.</p>
+                  <p>Design elegante e funcional, adaptado para celulares, tablets e desktops, otimizado para SEO.</p>
                 </div>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box">
                   <i class="bi bi-code"></i>
                   <h3>Interatividade com JavaScript</h3>
-                  <p>Criamos interfaces dinâmicas e envolventes para melhorar a experiência do usuário e agregar valor ao seu produto digital.</p>
+                  <p>Interfaces dinâmicas e envolventes para melhorar a experiência do usuário em seus projetos digitais.</p>
                 </div>
               </div>
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                   <i class="bi bi-gear"></i>
                   <h3>Suporte Técnico Especializado</h3>
-                  <p>Conte com uma equipe dedicada para manter seu sistema atualizado, seguro e sempre em funcionamento.</p>
+                  <p>Equipe dedicada para manter seu sistema atualizado, seguro e sempre em funcionamento.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><section id="features" class="features section">
+    </section>
+
+    <section id="features" class="features section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Serviços</h2>
-        <div><span>Conheça Nossos</span> <span class="description-title">Serviços Exclusivos</span></div>
+        <div><span>Conheça Nossos</span> <span class="description-title">Serviços de Desenvolvimento Web</span></div>
       </div>
       <div class="container">
         <div class="row gy-4">
@@ -181,7 +202,9 @@
           </div>
         </div>
       </div>
-    </section><section id="stats" class="stats section light-background">
+    </section>
+
+    <section id="stats" class="stats section light-background">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center">
@@ -214,20 +237,22 @@
           </div>
         </div>
       </div>
-    </section><section id="details" class="details section">
+    </section>
+
+    <section id="details" class="details section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Detalhes</h2>
-        <div><span>Conheça Nossos</span> <span class="description-title">Diferenciais</span></div>
+        <div><span>Conheça Nossos</span> <span class="description-title">Diferenciais em Passo Fundo</span></div>
       </div>
       <div class="container">
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="assets/img/details-1.png" class="img-fluid" alt="Soluções personalizadas em PHP">
+            <img src="assets/img/details-1.png" class="img-fluid" alt="Soluções personalizadas em PHP Passo Fundo" loading="lazy">
           </div>
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
             <h3>Soluções PHP Sob Medida</h3>
             <p class="fst-italic">
-              Criamos sistemas robustos, escaláveis e totalmente personalizados para transformar desafios em oportunidades, atendendo exatamente às demandas do seu negócio.
+              Criamos sistemas robustos e escaláveis para empresas em Passo Fundo, transformando desafios em oportunidades.
             </p>
             <ul>
               <li><i class="bi bi-check"></i><span> Sistemas inteligentes de gestão empresarial para otimizar processos.</span></li>
@@ -238,64 +263,66 @@
         </div>
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/details-2.png" class="img-fluid" alt="Sites responsivos com Bootstrap">
+            <img src="assets/img/details-2.png" class="img-fluid" alt="Sites responsivos com Bootstrap Passo Fundo" loading="lazy">
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
             <h3>Sites Responsivos com Design Impecável</h3>
             <p class="fst-italic">
-              Desenvolvemos sites modernos, intuitivos e totalmente adaptáveis a qualquer dispositivo, garantindo uma presença digital marcante.
+              Desenvolvemos sites modernos e adaptáveis para qualquer dispositivo, perfeitos para negócios em Passo Fundo.
             </p>
             <p>
-              Nossos projetos são otimizados para SEO, carregam rapidamente e oferecem uma navegação fluida, potencializando a experiência do usuário e seu alcance online.
+              Nossos projetos são otimizados para SEO, carregam rapidamente e oferecem navegação fluida, potencializando sua presença online.
             </p>
           </div>
         </div>
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/details-3.png" class="img-fluid" alt="Interatividade com JavaScript e HTML5">
+            <img src="assets/img/details-3.png" class="img-fluid" alt="Interatividade com JavaScript e HTML5" loading="lazy">
           </div>
           <div class="col-md-7" data-aos="fade-up">
             <h3>Interatividade e Dinamismo com JavaScript e HTML5</h3>
             <p>
-              Criamos interfaces interativas e envolventes utilizando JavaScript e HTML5, entregando experiências fluidas e funcionais para o usuário.
+              Criamos interfaces interativas utilizando JavaScript e HTML5, entregando experiências fluidas para usuários em Passo Fundo.
             </p>
             <ul>
               <li><i class="bi bi-check"></i><span> Componentes dinâmicos e responsivos para melhorar a usabilidade.</span></li>
               <li><i class="bi bi-check"></i><span> Animações suaves e efeitos visuais modernos que aumentam o engajamento.</span></li>
-              <li><i class="bi bi-check"></i><span> Utilização das melhores práticas em HTML5 para garantir performance e compatibilidade.</span></li>
+              <li><i class="bi bi-check"></i><span> Melhores práticas em HTML5 para garantir performance e compatibilidade.</span></li>
             </ul>
           </div>
         </div>
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-            <img src="assets/img/details-4.png" class="img-fluid" alt="Suporte técnico e manutenção">
+            <img src="assets/img/details-4.png" class="img-fluid" alt="Suporte técnico e manutenção Passo Fundo" loading="lazy">
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
             <h3>Suporte Técnico e Manutenção Proativos</h3>
             <p class="fst-italic">
-              Garantimos a máxima performance dos seus sistemas com suporte dedicado e manutenção contínua, para que você possa focar no crescimento do seu negócio.
+              Garantimos a máxima performance dos seus sistemas com suporte dedicado em Passo Fundo, para que você foque no crescimento.
             </p>
             <p>
-              Realizamos atualizações constantes, correções ágeis e otimizações estratégicas, assegurando que sua solução digital esteja sempre à frente.
+              Realizamos atualizações constantes, correções ágeis e otimizações estratégicas para manter sua solução digital à frente.
             </p>
           </div>
         </div>
       </div>
-    </section><section id="gallery" class="gallery section">
+    </section>
+
+    <section id="gallery" class="gallery section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfólio</h2>
-        <div><span>Confira Nosso</span> <span class="description-title">Trabalho</span></div>
+        <div><span>Confira Nosso</span> <span class="description-title">Trabalho em Passo Fundo</span></div>
       </div>
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row g-0">
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/paintinsenior.png" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/paintinsenior.png" alt="Sistema PaintinSenior para gestão de clínicas" class="img-fluid">
+                <img src="assets/img/paintinsenior.png" alt="Sistema PaintinSenior para gestão de clínicas em Passo Fundo" class="img-fluid" loading="lazy">
               </a>
               <div class="gallery-info p-3">
                 <h4>PaintinSenior</h4>
-                <p>Sistema de gestão desenvolvido em PHP, voltado para clínicas de cuidados a idosos, com foco na otimização de processos e no aprimoramento do controle interno.</p>
+                <p>Sistema de gestão em PHP para clínicas de idosos em Passo Fundo, otimizando processos e controle interno.</p>
                 <a href="#contact" class="read-more">
                   <span>Entre em contato</span> <i class="bi bi-arrow-right"></i>
                 </a>
@@ -305,11 +332,11 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/villeSite.png" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/villeSite.png" alt="Site institucional Ville de la Vie" class="img-fluid">
+                <img src="assets/img/villeSite.png" alt="Site institucional Ville de la Vie Passo Fundo" class="img-fluid" loading="lazy">
               </a>
               <div class="gallery-info p-3">
                 <h4>Site Ville de la Vie</h4>
-                <p>Site institucional moderno e responsivo, desenvolvido para o residencial especializado no cuidado integral da pessoa idosa.</p>
+                <p>Site responsivo e moderno para residencial de idosos em Passo Fundo, RS.</p>
                 <a href="https://villedelavie.com.br/" class="read-more" target="_blank">
                   <span>Acesse</span> <i class="bi bi-arrow-right"></i>
                 </a>
@@ -319,11 +346,11 @@
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/sistemaVille.png" class="glightbox" data-gallery="images-gallery">
-                <img src="assets/img/sistemaVille.png" alt="Sistema de gestão Ville de la Vie" class="img-fluid">
+                <img src="assets/img/sistemaVille.png" alt="Sistema de gestão Ville de la Vie Passo Fundo" class="img-fluid" loading="lazy">
               </a>
               <div class="gallery-info p-3">
                 <h4>Sistema Ville de la Vie</h4>
-                <p>Solução personalizada em PHP para gerenciamento e controle das atividades e atendimentos do residencial.</p>
+                <p>Solução em PHP para gerenciamento de atividades e atendimentos em residencial de Passo Fundo.</p>
                 <a href="#contact" class="read-more">
                   <span>Entre em Contato</span> <i class="bi bi-arrow-right"></i>
                 </a>
@@ -333,109 +360,125 @@
         </div>
       </div>
     </section>
-    
-<section id="testimonials" class="testimonials section dark-background">
-  <img src="assets/img/1tec.jpg" class="testimonials-bg" alt="Fundo com textura digital para depoimentos">
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          }
-        }
-      </script>
-      <div class="swiper-wrapper">
 
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/cintya1.webp" class="testimonial-img" alt="Cintya Christmann, empresária e enfermeira">
-            <h3>Cintya Christmann</h3>
-            <h4>Empresária e Enfermeira, Ville de la Vie</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+    <section id="testimonials" class="testimonials section dark-background">
+      <img src="assets/img/1tec.jpg" class="testimonials-bg" alt="Fundo digital para depoimentos PaintinWeb" loading="lazy">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/cintya1.webp" class="testimonial-img" alt="Cintya Christmann, empresária e enfermeira Passo Fundo" loading="lazy">
+                <h3>Cintya Christmann</h3>
+                <h4>Empresária e Enfermeira, Ville de la Vie</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>O Joel, da PaintinWeb, desenvolveu um site incrível e o sistema PaintinSenior em PHP, que otimizou nosso dia a dia em Passo Fundo. Tudo é integrado, do cadastro de moradores à gestão de atendimentos. Um investimento que trouxe agilidade!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
             </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>O Joel, da PaintinWeb, não só desenvolveu um site incrível para a Ville de la Vie, como também criou um sistema de gestão em PHP chamado PaintinSenior que otimizou muito nosso dia a dia. Antes, perdíamos horas com controles manuais. Hoje, tudo é integrado, desde o cadastro de moradores até a gestão de atendimentos. Foi um investimento que trouxe agilidade e controle que eu nem imaginava ser possível!</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Carla Pereira, dono de restaurante">
-            <h3>Carla Pereira</h3>
-            <h4>Dona de Restaurante, Sabor da Casa</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            <!-- Schema para Depoimento -->
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Cintya Christmann"
+              },
+              "itemReviewed": {
+                "@type": "Organization",
+                "name": "PaintinWeb"
+              },
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "reviewBody": "O Joel, da PaintinWeb, desenvolveu um site incrível e o sistema PaintinSenior em PHP, que otimizou nosso dia a dia em Passo Fundo..."
+            }
+            </script>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Carla Pereira, dona de restaurante Passo Fundo" loading="lazy">
+                <h3>Carla Pereira</h3>
+                <h4>Dona de Restaurante, Sabor da Casa</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Precisávamos de um sistema para gerenciar pedidos e estoque em Passo Fundo. O sistema PHP da PaintinWeb é intuitivo, reduziu desperdícios e acelerou o atendimento. Recomendo!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
             </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Precisávamos de um sistema para gerenciar nossos pedidos e estoque, e a PaintinWeb superou as expectativas. O sistema PHP é intuitivo, nos ajudou a reduzir o desperdício e a acelerar o atendimento. A equipe sempre esteve disponível para tirar dúvidas e adaptar o que foi preciso. Recomendo muito para qualquer negócio que busque otimização!</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Sofia Mendes, diretora de e-commerce">
-            <h3>Sofia Mendes</h3>
-            <h4>Diretora de E-commerce, Loja X Online</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Sofia Mendes, diretora de e-commerce Passo Fundo" loading="lazy">
+                <h3>Sofia Mendes</h3>
+                <h4>Diretora de E-commerce, Loja X Online</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Nosso site antigo era lento. A PaintinWeb refez tudo com HTML, JavaScript e design responsivo, aumentando nossas vendas em 30% em Passo Fundo. O SEO foi fundamental!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
             </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Nosso site antigo era lento e não se adaptava ao celular. Depois que a PaintinWeb refez tudo, usando HTML, JavaScript e um design responsivo, a diferença foi enorme! Nossas vendas online cresceram 30% no último trimestre, e a navegação ficou muito mais fluida. O trabalho deles com SEO também foi fundamental para sermos encontrados mais facilmente.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="Gustavo Alves, consultor financeiro">
-            <h3>Gustavo Alves</h3>
-            <h4>Consultor Financeiro, G.A. Consultoria</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="Gustavo Alves, consultor financeiro Passo Fundo" loading="lazy">
+                <h3>Gustavo Alves</h3>
+                <h4>Consultor Financeiro, G.A. Consultoria</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Precisava de um portal com relatórios personalizados. A PaintinWeb entregou uma solução segura com dashboards interativos em Passo Fundo. Profissionalismo impecável!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
             </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Eu precisava de um portal para meus clientes acessarem relatórios personalizados. A PaintinWeb entregou uma solução segura, com login individualizado e dashboards interativos. A comunicação foi clara e o projeto concluído no prazo. É visível o profissionalismo e a expertise deles em desenvolvimento PHP.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
-</section>
-    
+    </section>
+
     <section id="team" class="team section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Equipe</h2>
-        <div><span>Conheça Nossa</span> <span class="description-title">Equipe</span></div>
+        <div><span>Conheça Nossa</span> <span class="description-title">Equipe em Passo Fundo</span></div>
       </div>
       <div class="container">
         <div class="row gy-5">
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="pic">
-                <img src="assets/img/joelP.jpg" class="img-fluid" alt="Joel Paintinger, fundador da PaintinWeb">
+                <img src="assets/img/joelP.jpg" class="img-fluid" alt="Joel Paintinger, fundador da PaintinWeb Passo Fundo" loading="lazy">
               </div>
               <div class="member-info">
                 <h4>Joel Paintinger</h4>
@@ -444,7 +487,7 @@
                   <a href="https://x.com/paintinger" target="_blank" aria-label="Twitter de Joel Paintinger"><i class="bi bi-twitter-x"></i></a>
                   <a href="https://www.facebook.com/paintinger" target="_blank" aria-label="Facebook de Joel Paintinger"><i class="bi bi-facebook"></i></a>
                   <a href="https://www.instagram.com/joelpaintinger" target="_blank" aria-label="Instagram de Joel Paintinger"><i class="bi bi-instagram"></i></a>
-                  <a href="https://br.linkedin.com/in/joel-paintinger-36066876" target="_blank" aria-label="Linkedin de Joel Paintinger"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://br.linkedin.com/in/joel-paintinger-36066876" target="_blank" aria-label="LinkedIn de Joel Paintinger"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -452,18 +495,18 @@
         </div>
       </div>
     </section>
-    
+
     <section id="pricing" class="pricing section bg-light py-5">
       <div class="container text-center mb-5" data-aos="fade-up">
         <h2 class="display-5 fw-bold">Nossos Planos</h2>
-        <p class="lead">Sites e sistemas web personalizados com <strong>PHP, HTML5, JavaScript e MySQL</strong>. Escolha o plano ideal para o seu projeto!</p>
+        <p class="lead">Sites e sistemas web personalizados com <strong>PHP, HTML5, JavaScript e MySQL</strong> em Passo Fundo, RS. Escolha o plano ideal!</p>
       </div>
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item border rounded p-4 shadow-sm h-100">
               <h3 class="text-primary">Site Básico</h3>
-              <p class="text-muted mb-3">Perfeito para pequenos negócios que precisam de uma presença digital simples.</p>
+              <p class="text-muted mb-3">Perfeito para pequenos negócios que precisam de uma presença digital em Passo Fundo.</p>
               <h5 class="price mb-3"><sup>R$</sup> 800,00 – 1.500,00</h5>
               <a href="#contact" class="btn btn-outline-primary w-100 mb-2">Solicitar Agora</a>
               <p class="small text-center text-muted">Entrega em até 7–10 dias úteis</p>
@@ -482,7 +525,7 @@
             <div class="pricing-item border rounded p-4 shadow-lg h-100 bg-white position-relative">
               <div class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">Mais Popular</div>
               <h3 class="text-success">Site Dinâmico</h3>
-              <p class="text-muted mb-3">Ideal para empresas que querem gerenciar conteúdo e atrair mais clientes.</p>
+              <p class="text-muted mb-3">Ideal para empresas em Passo Fundo que querem gerenciar conteúdo e atrair clientes.</p>
               <h5 class="price mb-3"><sup>R$</sup> 2.000,00 – 4.000,00</h5>
               <a href="#contact" class="btn btn-success w-100 mb-2">Solicitar Orçamento</a>
               <p class="small text-center text-muted">Prazo médio: 15–20 dias úteis</p>
@@ -500,7 +543,7 @@
           <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="300">
             <div class="pricing-item border rounded p-4 shadow-sm h-100">
               <h3 class="text-dark">E-commerce Básico</h3>
-              <p class="text-muted mb-3">Loja virtual completa para vender produtos online com segurança.</p>
+              <p class="text-muted mb-3">Loja virtual completa para vender produtos online com segurança em Passo Fundo.</p>
               <h5 class="price mb-3"><sup>R$</sup> 4.500,00 – 7.000,00</h5>
               <a href="#contact" class="btn btn-dark w-100 mb-2">Agendar Consultoria</a>
               <p class="small text-center text-muted">Prazo: 20–30 dias úteis</p>
@@ -518,7 +561,7 @@
           <div class="col-lg-3" data-aos="zoom-in" data-aos-delay="500">
             <div class="pricing-item border rounded p-4 shadow-sm h-100">
               <h3 class="text-primary">Sistema de Gerenciamento</h3>
-              <p class="text-muted mb-3">Sistema web sob medida com autenticação, controle de dados e funcionalidades personalizadas.</p>
+              <p class="text-muted mb-3">Sistema web sob medida com autenticação e funcionalidades personalizadas em Passo Fundo.</p>
               <h5 class="price mb-3"><sup>R$</sup> 5.000,00 – 10.000,00</h5>
               <a href="#contact" class="btn btn-outline-primary w-100 mb-2">Solicitar Proposta</a>
               <p class="small text-center text-muted">Prazo estimado: 30–45 dias úteis</p>
@@ -536,179 +579,176 @@
         </div>
       </div>
     </section>
-    
+
     <section id="processo" class="py-5 bg-white">
-  <div class="container text-center mb-5" data-aos="fade-up">
-    <h2 class="display-5 fw-bold">Como Funciona</h2>
-    <p class="lead text-muted">Veja como é simples contratar e receber seu site:</p>
-  </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-4 text-center">
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <div class="mb-3">
-            <i class="bi bi-clipboard-check text-primary fs-2"></i>
+      <div class="container text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">Como Funciona</h2>
+        <p class="lead text-muted">Veja como é simples contratar e receber seu site em Passo Fundo:</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4 text-center">
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <div class="mb-3">
+                <i class="bi bi-clipboard-check text-primary fs-2"></i>
+              </div>
+              <h5 class="fw-bold text-primary">1. Briefing</h5>
+              <p class="small text-muted mb-0">Coletamos suas ideias, referências e metas para o projeto.</p>
+            </div>
           </div>
-          <h5 class="fw-bold text-primary">1. Briefing</h5>
-          <p class="small text-muted mb-0">Coletamos suas ideias, referências e metas para o projeto.</p>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <div class="mb-3">
+                <i class="bi bi-code-slash text-success fs-2"></i>
+              </div>
+              <h5 class="fw-bold text-success">2. Desenvolvimento</h5>
+              <p class="small text-muted mb-0">Criamos seu site com PHP, HTML5, JavaScript e MySQL.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <div class="mb-3">
+                <i class="bi bi-pencil-square text-warning fs-2"></i>
+              </div>
+              <h5 class="fw-bold text-warning">3. Aprovação</h5>
+              <p class="small text-muted mb-0">Você avalia o site e solicita ajustes, se necessário.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <div class="mb-3">
+                <i class="bi bi-cloud-upload text-info fs-2"></i>
+              </div>
+              <h5 class="fw-bold text-info">4. Publicação</h5>
+              <p class="small text-muted mb-0">Publicamos o site com domínio e e-mail profissional na Hostinger.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <div class="mb-3">
-            <i class="bi bi-code-slash text-success fs-2"></i>
-          </div>
-          <h5 class="fw-bold text-success">2. Desenvolvimento</h5>
-          <p class="small text-muted mb-0">Criamos seu site com PHP, HTML5, JavaScript e MySQL.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <div class="mb-3">
-            <i class="bi bi-pencil-square text-warning fs-2"></i>
-          </div>
-          <h5 class="fw-bold text-warning">3. Aprovação</h5>
-          <p class="small text-muted mb-0">Você avalia o site e solicita ajustes, se necessário.</p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <div class="mb-3">
-            <i class="bi bi-cloud-upload text-info fs-2"></i>
-          </div>
-          <h5 class="fw-bold text-info">4. Publicação</h5>
-          <p class="small text-muted mb-0">Publicamos o site com domínio e e-mail profissional na Hostinger.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="diferenciais" class="py-5 bg-light">
-  <div class="container text-center mb-5" data-aos="fade-up">
-    <h2 class="display-5 fw-bold">Por que escolher meu serviço?</h2>
-    <p class="lead text-muted">Confira os diferenciais que ofereço em cada projeto:</p>
-  </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row text-center g-4">
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-white">
-          <div class="mb-3">
-            <i class="bi bi-shield-lock-fill fs-2 text-success"></i>
+      <div class="container text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">Por que Escolher a PaintinWeb?</h2>
+        <p class="lead text-muted">Confira os diferenciais para projetos em Passo Fundo, RS:</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row text-center g-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <div class="mb-3">
+                <i class="bi bi-shield-lock-fill fs-2 text-success"></i>
+              </div>
+              <h5 class="fw-bold text-success">Segurança</h5>
+              <p class="small text-muted mb-0">Sites otimizados com SSL, proteção contra invasões e backups regulares.</p>
+            </div>
           </div>
-          <h5 class="fw-bold text-success">Segurança</h5>
-          <p class="small text-muted mb-0">Sites otimizados com certificados SSL, proteção contra invasões e backups regulares.</p>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <div class="mb-3">
+                <i class="bi bi-speedometer2 fs-2 text-primary"></i>
+              </div>
+              <h5 class="fw-bold text-primary">Performance</h5>
+              <p class="small text-muted mb-0">Sites rápidos, otimizados para SEO e com usabilidade em qualquer dispositivo.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-white">
+              <div class="mb-3">
+                <i class="bi bi-person-lines-fill fs-2 text-warning"></i>
+              </div>
+              <h5 class="fw-bold text-warning">Atendimento Direto</h5>
+              <p class="small text-muted mb-0">Fale diretamente comigo durante todo o processo, sem burocracia.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-white">
-          <div class="mb-3">
-            <i class="bi bi-speedometer2 fs-2 text-primary"></i>
-          </div>
-          <h5 class="fw-bold text-primary">Performance</h5>
-          <p class="small text-muted mb-0">Sites rápidos, otimizados para SEO e com excelente usabilidade em qualquer dispositivo.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-white">
-          <div class="mb-3">
-            <i class="bi bi-person-lines-fill fs-2 text-warning"></i>
-          </div>
-          <h5 class="fw-bold text-warning">Atendimento Direto</h5>
-          <p class="small text-muted mb-0">Você fala diretamente comigo durante todo o processo. Nada de burocracia ou intermediários.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <section id="manutencao" class="py-5 bg-white">
-  <div class="container text-center mb-5" data-aos="fade-up">
-    <h2 class="display-5 fw-bold">Manutenção e Suporte</h2>
-    <p class="lead text-muted">
-      Garanta segurança, desempenho e atualizações constantes para o seu site com nossos planos de suporte contínuo.
-    </p>
-  </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row text-center gy-4">
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-primary fw-bold">Plano Básico</h5>
-          <p class="text-muted mb-2">R$ 150,00/mês</p>
-          <ul class="list-unstyled small">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Backup mensal</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte por e-mail</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Criação de novas páginas</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Atualizações de conteúdo</li>
-          </ul>
-        </div>
+      <div class="container text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">Manutenção e Suporte</h2>
+        <p class="lead text-muted">Garanta segurança e desempenho para seu site em Passo Fundo com nossos planos de suporte.</p>
       </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-success fw-bold">Plano Intermediário</h5>
-          <p class="text-muted mb-2">R$ 300,00/mês</p>
-          <ul class="list-unstyled small">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Atualizações técnicas regulares</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Relatórios mensais de desempenho</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Correção de erros e bugs</li>
-            <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Criação de novas páginas</li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100 bg-light">
-          <h5 class="text-dark fw-bold">Plano Premium</h5>
-          <p class="text-muted mb-2">R$ 500,00/mês</p>
-          <ul class="list-unstyled small">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Tudo incluído nos planos anteriores</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Criação de novas páginas sob demanda</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte via WhatsApp 24 horas</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Otimização e melhorias contínuas</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-   <section id="contrato" class="py-5 bg-white">
-  <div class="container text-center mb-5" data-aos="fade-up">
-    <h2 class="display-5 fw-bold">Transparência e Garantia para Seu Projeto</h2>
-    <p class="lead text-muted">Tenha a segurança de que tudo será entregue conforme o combinado, com suporte adequado e proteção dos seus dados.</p>
-  </div>
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="p-4 p-md-5 bg-light border rounded shadow-sm text-center">
-          <div class="row g-4">
-            <div class="col-md-4">
-              <div class="mb-3">
-                <i class="bi bi-file-earmark-text-fill fs-1 text-primary"></i>
-              </div>
-              <h5 class="fw-bold">Contrato Detalhado</h5>
-              <p class="small text-muted mb-0">Escopo, prazos e valores definidos por escrito para sua total segurança.</p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row text-center gy-4">
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-primary fw-bold">Plano Básico</h5>
+              <p class="text-muted mb-2">R$ 150,00/mês</p>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Backup mensal</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte por e-mail</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Criação de novas páginas</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Atualizações de conteúdo</li>
+              </ul>
             </div>
-            <div class="col-md-4">
-              <div class="mb-3">
-                <i class="bi bi-patch-check-fill fs-1 text-success"></i>
-              </div>
-              <h5 class="fw-bold">Suporte Garantido</h5>
-              <p class="small text-muted mb-0">Atendimento conforme o plano contratado, com acompanhamento pós-entrega.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-success fw-bold">Plano Intermediário</h5>
+              <p class="text-muted mb-2">R$ 300,00/mês</p>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Atualizações técnicas regulares</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Relatórios mensais de desempenho</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Correção de erros e bugs</li>
+                <li><i class="bi bi-x-circle-fill text-danger me-2"></i> Criação de novas páginas</li>
+              </ul>
             </div>
-            <div class="col-md-4">
-              <div class="mb-3">
-                <i class="bi bi-shield-lock-fill fs-1 text-dark"></i>
-              </div>
-              <h5 class="fw-bold">Segurança Total</h5>
-              <p class="small text-muted mb-0">Hospedagem segura, proteção de dados e práticas atualizadas de segurança web.</p>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm h-100 bg-light">
+              <h5 class="text-dark fw-bold">Plano Premium</h5>
+              <p class="text-muted mb-2">R$ 500,00/mês</p>
+              <ul class="list-unstyled small">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Tudo incluído nos planos anteriores</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Criação de novas páginas sob demanda</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Suporte via WhatsApp 24 horas</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Otimização e melhorias contínuas</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <section id="contrato" class="py-5 bg-white">
+      <div class="container text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold">Transparência e Garantia para Seu Projeto</h2>
+        <p class="lead text-muted">Tenha a segurança de que tudo será entregue conforme o combinado em Passo Fundo, RS.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <div class="p-4 p-md-5 bg-light border rounded shadow-sm text-center">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="mb-3">
+                    <i class="bi bi-file-earmark-text-fill fs-1 text-primary"></i>
+                  </div>
+                  <h5 class="fw-bold">Contrato Detalhado</h5>
+                  <p class="small text-muted mb-0">Escopo, prazos e valores definidos por escrito para sua total segurança.</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3">
+                    <i class="bi bi-patch-check-fill fs-1 text-success"></i>
+                  </div>
+                  <h5 class="fw-bold">Suporte Garantido</h5>
+                  <p class="small text-muted mb-0">Atendimento conforme o plano contratado, com acompanhamento pós-entrega.</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="mb-3">
+                    <i class="bi bi-shield-lock-fill fs-1 text-dark"></i>
+                  </div>
+                  <h5 class="fw-bold">Segurança Total</h5>
+                  <p class="small text-muted mb-0">Hospedagem segura, proteção de dados e práticas atualizadas de segurança web.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id="faq" class="faq section light-background">
       <div class="container-fluid">
@@ -716,14 +756,14 @@
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
               <h3><span>Perguntas</span> <strong>Frequentes</strong></h3>
-              <p>Confira as dúvidas mais comuns sobre nossos serviços de desenvolvimento web.</p>
+              <p>Confira as dúvidas mais comuns sobre nossos serviços de desenvolvimento web em Passo Fundo.</p>
             </div>
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
               <div class="faq-item" role="button" aria-expanded="false" tabindex="0">
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Quais tecnologias vocês utilizam?</h3>
                 <div class="faq-content">
-                  <p>Utilizamos principalmente PHP, HTML, JavaScript e Bootstrap para criar sistemas e sites robustos, responsivos e interativos.</p>
+                  <p>Utilizamos PHP, HTML, JavaScript e Bootstrap para criar sistemas e sites robustos e responsivos em Passo Fundo.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -731,7 +771,7 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Vocês oferecem suporte após a entrega do projeto?</h3>
                 <div class="faq-content">
-                  <p>Sim, oferecemos suporte técnico contínuo, incluindo manutenção, atualizações e correções de bugs para garantir o bom funcionamento do seu sistema ou site.</p>
+                  <p>Sim, oferecemos suporte técnico contínuo em Passo Fundo, incluindo manutenção, atualizações e correções de bugs.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
@@ -739,23 +779,23 @@
                 <i class="faq-icon bi bi-question-circle"></i>
                 <h3>Quanto tempo leva para desenvolver um site?</h3>
                 <div class="faq-content">
-                  <p>O prazo depende da complexidade do projeto, mas geralmente varia de 2 a 8 semanas. Entre em contato para uma estimativa personalizada.</p>
+                  <p>O prazo varia de 2 a 8 semanas, dependendo da complexidade. Entre em contato para uma estimativa personalizada em Passo Fundo.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div>
             </div>
           </div>
           <div class="col-lg-5 order-1 order-lg-2">
-            <img src="assets/img/faq.jpg" class="img-fluid" alt="Imagem ilustrativa de perguntas frequentes" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/faq.jpg" class="img-fluid" alt="Perguntas frequentes sobre desenvolvimento web Passo Fundo" loading="lazy" data-aos="zoom-in" data-aos-delay="100">
           </div>
         </div>
       </div>
     </section>
-    
+
     <section id="contact" class="contact section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contato</h2>
-        <div><span>Entre em</span> <span class="description-title">Contato</span></div>
+        <div><span>Entre em</span> <span class="description-title">Contato em Passo Fundo</span></div>
       </div>
       <div class="container" data-aos="fade" data-aos-delay="100">
         <div class="row gy-4">
@@ -852,7 +892,7 @@
         </div>
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Fale Conosco</h4>
-          <p>Estamos prontos para te atender! Clique no botão abaixo e fale conosco pelo WhatsApp:</p>
+          <p>Estamos prontos para te atender em Passo Fundo! Clique no botão abaixo e fale conosco pelo WhatsApp:</p>
           <a href="https://wa.me/5554981244964" target="_blank" class="btn btn-success mt-2">Enviar Mensagem</a>
         </div>
       </div>
@@ -864,6 +904,7 @@
       </div>
     </div>
   </footer>
+
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
@@ -883,7 +924,5 @@
       });
     });
   </script>
-
 </body>
-
 </html>
